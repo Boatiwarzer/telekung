@@ -13,7 +13,7 @@ import { RouterLink, RouterView } from 'vue-router'
 
   <RouterView />
   <div>
-    telekung
+    telekung 
   </div>
 </template>
 
