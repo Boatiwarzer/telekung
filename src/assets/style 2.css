@@ -1,0 +1,9 @@
+.header {
+    padding: 30px;
+    text-align: center;
+    background: white;
+  }
+.bg-regular{
+    background-image: url("https://cdn.discordapp.com/attachments/1039195786585579550/1044173205092450315/regular-menu.jpg");
+    background-position: center;
+}
