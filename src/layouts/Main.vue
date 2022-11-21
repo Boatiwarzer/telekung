@@ -1,5 +1,5 @@
 <template >
-     <div id="background" class="min-h-screen"></div>
+     <div id="background" class="min-h-screen">
    
     <div class="">
         <router-link to="/" class="button">Home</router-link>
@@ -9,6 +9,7 @@
     <div>
         <h1 class="h1"><strong><ins>Telekung</ins></strong></h1>
     </div>
+</div>
 </template>
 
 <script>
@@ -23,14 +24,14 @@ export default{
 
 #background {
   /* background-image: url(../assets/images/back.png);  */
-    background-color: #003F5F;
+    background-color: #ff844b;
     background-size: cover;
     background-repeat: no-repeat;
     animation: bgmain 10s infinite;
 }
 .h1{
     /* display:block; */
-    @apply bg-neutral-900 border-4 border-amber-200;
+    @apply bg-blue-900 border-4 border-amber-200;
     font-size: 300%;
     color: #FFFFAB;
     text-align: center;
@@ -54,10 +55,10 @@ export default{
     margin-left: auto;
     animation: fadeIn 3s;
 }
-.button:hover {background-color: #6b5cf5}
+.button:hover {background-color: #765500}
 .button:active {
-  background-color: #4e90f3;
-  box-shadow: 0 5px #c70700;
+  background-color: #63b500;
+  box-shadow: 0 5px #efff44;
   transform: translateY(2px);
   margin-left: auto;
 }
