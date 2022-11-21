@@ -17,7 +17,7 @@ const router = createRouter({
     {
       path: '/menu',
       name: 'menu',
-      component: menu,
+      //component: menu,
       meta:{
         layout: 'Menu'
       }

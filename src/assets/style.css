@@ -3,7 +3,16 @@
     text-align: center;
     background: white;
   }
+.bg-normal{
+    background-image: url("https://cdn.discordapp.com/attachments/1039195786585579550/1044184930789371924/normal-menu.jpg");
+    background-position: center;
+
+}
 .bg-regular{
     background-image: url("https://cdn.discordapp.com/attachments/1039195786585579550/1044173205092450315/regular-menu.jpg");
+    background-position: center;
+}
+.bg-premium{
+    background-image: url("https://cdn.discordapp.com/attachments/1039195786585579550/1044184964884865094/premium-menu.jpg");
     background-position: center;
 }
