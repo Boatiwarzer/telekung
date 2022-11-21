@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import menu from '../views/menu.vue'
 import HomeView from '../views/HomeView.vue'
-import CourseSelect from '../views/CourseSelect.vue'
+import CourseSelect from '../views/Select.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -27,6 +27,7 @@ const router = createRouter({
       name: 'select',
       // component: select,
       meta:{
+        // layout: 'Menu'
         layout: 'Menu'
       }
     },,{
