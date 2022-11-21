@@ -15,13 +15,14 @@ import { RouterLink, RouterView } from 'vue-router'
 <script>
 import Main from '@/layouts/Main.vue'
 import Menu from '@/views/menu.vue'
-// import Select from '@/layouts/Select.vue'
+import Select from '@/views/CourseSelect.vue'
 // import Default from '@/layouts/Default.vue'
 export default {
   components:
   {
     Main,
-    Menu
+    Menu,
+    Select
     // Select,
     // Default
   },

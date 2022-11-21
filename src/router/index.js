@@ -25,10 +25,11 @@ const router = createRouter({
     {
       path: '/select',
       name: 'select',
-      // component: select,
       meta:{
-        layout: 'Menu'
+        layout: 'Select'
       }
+      // component: select,
+      
     },,{
       path: '/form',
       name: 'form',

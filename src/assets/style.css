@@ -1,16 +1,26 @@
+template{
+    height: 100%;
+    width: 100%;
+}
 .header {
     padding: 30px;
     text-align: center;
     background: white;
   }
 .bg-normal{
-    background-image: url("https://cdn.discordapp.com/attachments/1039195786585579550/1044184930789371924/normal-menu.jpg");
     background-position: center;
+    background-size: cover;
+    height: 100%;
+    background-repeat: no-repeat;
+
 
 }
 .bg-regular{
     background-image: url("https://cdn.discordapp.com/attachments/1039195786585579550/1044173205092450315/regular-menu.jpg");
     background-position: center;
+    background-size: cover;
+    height: 100%;
+    background-repeat: no-repeat;
 }
 .bg-premium{
     background-image: url("https://cdn.discordapp.com/attachments/1039195786585579550/1044184964884865094/premium-menu.jpg");
