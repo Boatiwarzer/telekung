@@ -1,7 +1,7 @@
 <template>
-    <form>
-        <label for=""></label>
-    </form>
+    <div class="">
+        <h1>123</h1>
+    </div>
 </template>
 
 <script>

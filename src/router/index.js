@@ -1,7 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import menu from '../views/menu.vue'
 import HomeView from '../views/HomeView.vue'
-import CourseSelect from '../views/CourseSelect.vue'
+import Select from '../views/CourseSelect.vue'
+
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -25,10 +26,11 @@ const router = createRouter({
     {
       path: '/select',
       name: 'select',
-      // component: select,
       meta:{
-        layout: 'Menu'
+        layout: 'Select'
       }
+      // component: select,
+      
     },,{
       path: '/form',
       name: 'form',
