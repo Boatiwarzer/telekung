@@ -5,7 +5,7 @@
     </div>
         
     <div class="bg-regular">
-        <p>chack</p>
+        <!-- <p>chack</p> -->
     </div>
   
 </template>
