@@ -1,11 +1,25 @@
-template{
-    height: 100%;
-    width: 100%;
+.button {
+    background-color: #0d6551; /* Green */
+    border: none;
+    color: rgb(251, 251, 251);
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px 20px 20px;
+    cursor: pointer;
+    border-radius: 12px;
+
+  }
+.costom{
+    text-align: center;
+    /* margin-right: 100px; */
 }
 .header {
     padding: 30px;
     text-align: center;
-    background: white;
+    background: rgb(245, 202, 202);
   }
 .bg-normal{
     background-position: center;
@@ -18,9 +32,6 @@ template{
 .bg-regular{
     background-image: url("https://cdn.discordapp.com/attachments/1039195786585579550/1044173205092450315/regular-menu.jpg");
     background-position: center;
-    background-size: cover;
-    height: 100%;
-    background-repeat: no-repeat;
 }
 .bg-premium{
     background-image: url("https://cdn.discordapp.com/attachments/1039195786585579550/1044184964884865094/premium-menu.jpg");
