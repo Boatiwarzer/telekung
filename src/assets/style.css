@@ -42,3 +42,6 @@ template{
     background-image: url("https://cdn.discordapp.com/attachments/1039195786585579550/1044184964884865094/premium-menu.jpg");
     background-position: center;
 }
+.regular{
+    margin-left: 130px;
+    margin-right: 130px;}
