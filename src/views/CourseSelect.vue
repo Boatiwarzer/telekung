@@ -33,7 +33,7 @@
             <option value="premiur" class="Premium">Premium</option>
         </select><br>
         <label for="person">Number of people : </label>
-        <input type="text" id="person" name="person" placeholder="Plese enter the number of people"><br>
+        <input class="box1" type="text" id="person" name="person" placeholder="Plese enter the number of people"><br>
         <label for="Select-day">Select day : </label>
         <input type="date"><br>
         <label for="Telephone">Telephone: </label>

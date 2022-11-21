@@ -5,12 +5,22 @@
 
 
 form {
-    @apply absolute p-6 text-teal-800  inline-block text-xl  ml-8 max-w-lg 
-     bg-amber-200 rounded-lg border-2 border-fuchsia-100 shadow-md
-       dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700;
+    @apply absolute pt-14 pb-14 pl-14 pr-32 text-teal-800  text-xl  ml-4 
+     bg-amber-200 rounded-xl border-2 border-fuchsia-100 shadow-md;
       box-shadow: 6px 2px 8px 4px rgba(0, 0, 0, 0.39);
       font-family: 'Mali', cursive;
+    
     }
 .box{
-    @apply mt-48 flex justify-center ;
+    @apply mt-24 flex justify-center 	;
+}
+.box1{
+  width: 66%;
+}
+input{
+  @apply border-2 border-cyan-200 mb-2
+}
+select{
+  @apply border-2 border-cyan-200 mb-2
+
 }
