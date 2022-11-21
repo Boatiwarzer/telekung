@@ -55,10 +55,10 @@ export default{
     margin-left: auto;
     animation: fadeIn 3s;
 }
-.button:hover {background-color: #765500}
+.button:hover {background-color: #ffd670}
 .button:active {
-  background-color: #63b500;
-  box-shadow: 0 5px #efff44;
+  background-color: #b8f66c;
+  box-shadow: 0 5px #ca1313;
   transform: translateY(2px);
   margin-left: auto;
 }
