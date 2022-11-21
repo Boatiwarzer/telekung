@@ -24,7 +24,7 @@ export default{
 
 #background {
   /* background-image: url(../assets/images/back.png);  */
-    background-color: #ff844b;
+    background-color: #febea1;
     background-size: cover;
     background-repeat: no-repeat;
     animation: bgmain 10s infinite;
@@ -45,15 +45,28 @@ export default{
     
 }
 .button{
-    display: inline-block;
-    padding: 3px 10px;
+    /* display: inline-block;
+    padding: 20px;
     font-size: 100%;
-    font-family: 'Prompt', sans-serif;
-    color: #080073;
+    font-family: 'Mali', cursive;
+    color: #f7f7f9;
+    background-color: #0d6551;
     text-align: center;
     padding: 2%;
-    margin-left: auto;
-    animation: fadeIn 3s;
+    margin: 4px 2px 20px 20px;
+    border-radius: 12px;
+    cursor: pointer; */
+    background-color: #0d6551; /* Green */
+    border: none;
+    color: rgb(251, 251, 251);
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px 20px 20px;
+    cursor: pointer;
+    border-radius: 12px;
 }
 .button:hover {background-color: #ffd670}
 .button:active {
