@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import menu from '../views/menu.vue'
 import HomeView from '../views/HomeView.vue'
 import CourseSelect from '../views/CourseSelect.vue'
 
@@ -8,7 +9,7 @@ const router = createRouter({
     {
       path: '/home',
       name: 'home',
-      component: HomeView,
+      // component: HomeView,
       meta:{
         layout: 'Main'
       }
@@ -24,14 +25,14 @@ const router = createRouter({
     {
       path: '/select',
       name: 'select',
-      component: select,
+      // component: select,
       meta:{
         layout: 'Menu'
       }
     },,{
       path: '/form',
       name: 'form',
-      component: FormView,
+      // component: FormView,
       meta:{
         layout: 'Default'
       }

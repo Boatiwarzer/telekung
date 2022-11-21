@@ -1,5 +1,6 @@
 <template>
-  
+    <div>yahoo</div>
+    
 </template>
 
 <script>
