@@ -1,7 +1,5 @@
 <template>
-    <form>
-        <label for=""></label>
-    </form>
+  
 </template>
 
 <script>
