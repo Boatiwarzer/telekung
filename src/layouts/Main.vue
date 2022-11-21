@@ -1,5 +1,5 @@
 <template >
-    <div>puti</div>
+    <div>putisss</div>
 </template>
 
 <script>
