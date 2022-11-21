@@ -21,7 +21,9 @@ export default{
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@200;400&display=swap');
-
+*{
+    font-family: 'Mali', cursive;
+}
 #background {
   /* background-image: url(../assets/images/back.png);  */
     background-color: #febea1;

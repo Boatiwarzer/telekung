@@ -6,7 +6,7 @@
     </div>
     <div>
         <div class="header">
-        <h1>my menu</h1>
+        <h1>My Menu</h1>
     </div>
     </div>
     

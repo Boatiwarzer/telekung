@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Mali:wght@200;400&display=swap');
 
+
 .button {
     background-color: #0d6551; /* Green */
     border: none;
@@ -44,3 +45,15 @@
 .regular{
     margin-left: 130px;
     margin-right: 130px;}
+
+h1{
+ /* display:block; */
+        @apply bg-blue-900 border-4 border-amber-200;
+        font-size: 300%;
+        color: #FFFFAB;
+        text-align: center;
+        font-family: 'Mali', cursive;
+        margin-left: 35%;
+        margin-right: 35%;
+        padding: 1%;
+        animation: fadeIn 2s; }
