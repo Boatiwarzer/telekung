@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@200;400&display=swap');
+
+
+form {
+    @apply absolute p-6 text-teal-800  text-xl inline-block  ml-8 max-w-lg 
+     bg-amber-200 rounded-lg border-2 border-fuchsia-100 shadow-md
+       dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700;
+      font-family: 'Mali', cursive;
+    }
+.box{
+    
+}

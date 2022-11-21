@@ -15,6 +15,11 @@
 .costom{
     text-align: center;
     /* margin-right: 100px; */
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@200;400&display=swap');
+
+template{
+    height: 100%;
+    width: 100%;
 }
 .header {
     padding: 30px;
