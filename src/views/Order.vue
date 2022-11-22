@@ -15,17 +15,14 @@
         
     </div>
 
-      <div class="head">
-        Order
+    <div>
+      <div v-for="menu in selectmenu" :key="menu.id" style="display: inline; ">
+            <img v-if="menu.value === 1" :src="menu.picture" alt="..." class="profilecolor2">
       </div>
-
-    <div class="flexbox">
-    <div class="item">
-    <div class="content">
-      <p>11111</p>
     </div>
-  </div>
-  <div class="item">
+    
+    
+  <!-- <div class="item">
     <div class="content">
       <p>22222</p>
     </div>
@@ -40,12 +37,22 @@
       <p>44444</p>
     </div>
   </div>
-    </div>
+    </div> -->
 </template>
 
 <script>
+import { useSelectMenuStore } from '../stores/order.js';
 export default {
-
+    data() {
+      return {
+        selectmenu: [],
+      };
+    },
+  async mounted(){
+    await useSelectMenuStore().fetchData();
+    this.selectmenu = useSelectMenuStore().getselectmenu;
+    console.log(this.selectmenu);
+  },
 }
 </script>
 

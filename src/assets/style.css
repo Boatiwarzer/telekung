@@ -79,3 +79,24 @@ h1{
     height: 100%;
     padding: 10px;
 }
+.profilecolor2{
+    @apply bg-contain bg-center block m-2 p-2 max-w-xl relative
+     bg-amber-200 border-2 border-fuchsia-100 shadow-md
+      hover:bg-amber-400;
+    font-family: 'Mali', cursive;
+    display: inline-block;
+    object-fit: cover;
+    width: 250px; 
+    height: 250px;
+    
+}
+.boxs{
+    @apply m-1 p-1 ;
+}
+.profile{
+    @apply  m-8 p-4 space-x-6 h-full w-full;
+    animation: fadeIn 2s;
+}
+/* menu.picture{
+    @apply bg-contain bg-center w-96 h-96 scale-70 rounded-full m-1;
+} */
