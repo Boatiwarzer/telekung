@@ -26,18 +26,40 @@
       <div >
         <div  v-for="menu in selectmenu" :key="menu.id" style="display: inline; " >
             <img v-if="menu.value === 1" :src="menu.picture" alt="..." class="profilecolor2">
+            <div class="wrapper" v-if="menu.value === 1">
+              <button class="btn btn--minus" @click="changeCounter('-1')" type="button" name="button">
+                -
+              </button>
+              <input class="quantity" type="text" name="name" :value="counter">
+              <button class="btn btn--plus" @click="changeCounter('1')" type="button" name="button">
+                +
+              </button>
+        </div>
         </div>
       </div>
       <div>
         <div v-for="menu in selectmenu" :key="menu.id" style="display: inline; ">
-            <img v-if="menu.value <= 2" :src="menu.picture" alt="..." class="profilecolor2">
+            <img v-if="menu.value === 2" :src="menu.picture" alt="..." class="profilecolor2">
         </div>
       </div>
         <div>
           <div v-for="menu in selectmenu" :key="menu.id" style="display: inline; ">
-            <img v-if="menu.value <= 3" :src="menu.picture" alt="..." class="profilecolor2">
+            <img v-if="menu.value === 3" :src="menu.picture" alt="..." class="profilecolor2">
         </div>
       </div>
+      <div id="app">
+		    <div class="wrapper">
+          <button class="btn btn--minus" @click="changeCounter('-1')" type="button" name="button">
+          -
+          </button>
+          <input class="quantity" type="text" name="name" :value="counter">
+          <button class="btn btn--plus" @click="changeCounter('1')" type="button" name="button">
+            +
+          </button>
+        </div>
+
+	</div>
+      
       
       
     </div>
@@ -69,7 +91,7 @@ export default {
       return {
         selectmenu: [],
         image_src:'',
-        
+        counter: 1,
 
       };
     },
@@ -77,7 +99,17 @@ export default {
     await useSelectMenuStore().fetchData();
     this.selectmenu = useSelectMenuStore().getselectmenu;
     this.normal()
-  },
+  },methods: {
+        changeCounter: function(num){
+				this.counter += +num
+				console.log(this.counter)
+				!isNaN(this.counter) && this.counter > 0 ? this.counter : this.counter = 0;
+            
+			}
+		},
+		computed: {
+
+		}
   // methods:{
   //       normal(){
   //           this.normal === false && this.regular === true && this.premium === true;
@@ -90,9 +122,11 @@ export default {
   //       },
   // },
 }
+
 </script>
 
 <style>
+
 head{
   color: blueviolet;
   font-size: x-large;
