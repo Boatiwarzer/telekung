@@ -14,10 +14,25 @@
         <router-link to="/order" class="button" >Order</router-link>
         
     </div>
+    <!-- <div class="costom">
+        <button @click="normal" class="button">normal</button>
+        <button @click="regular" class="button">regular</button> 
+        <button @click="premium" class="button">premium</button> 
+        
+    </div>
+    <div class="regular">       
+        <img :src="this.image_src">
+    </div> -->
 
-    <div>
+    <div class="bg-black">
       <div v-for="menu in selectmenu" :key="menu.id" >
-            <img v-if="menu.value === 1" :src="menu.picture" alt="..." class="profilecolor2">
+        <span><img v-if="menu.value === 1" :src="menu.picture" alt="..." class="profilecolor2"></span>
+      </div>
+      <div v-for="menu in selectmenu" :key="menu.id" >
+            <img v-if="menu.value === 2" :src="menu.picture" alt="..." class="profilecolor2">
+      </div>
+      <div v-for="menu in selectmenu" :key="menu.id" >
+            <img v-if="menu.value === 3" :src="menu.picture" alt="..." class="profilecolor2">
       </div>
     </div>
     
@@ -46,12 +61,25 @@ export default {
     data() {
       return {
         selectmenu: [],
+        image_src:'',
       };
     },
   async mounted(){
     await useSelectMenuStore().fetchData();
     this.selectmenu = useSelectMenuStore().getselectmenu;
-    console.log(this.selectmenu);
+    this.normal()
+  },
+  methods:{
+        normal(){
+            this.image_src='https://cdn.discordapp.com/attachments/1039195786585579550/1044184930789371924/normal-menu.jpg';
+
+        },
+        regular(){
+            this.image_src='https://cdn.discordapp.com/attachments/1039195786585579550/1044173205092450315/regular-menu.jpg';
+        },
+        premium(){
+            this.image_src='https://cdn.discordapp.com/attachments/1039195786585579550/1044184964884865094/premium-menu.jpg';
+        },
   },
 }
 </script>

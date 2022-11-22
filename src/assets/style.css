@@ -80,10 +80,13 @@ h1{
     padding: 10px;
 }
 .profilecolor2{
-    @apply bg-contain bg-center block m-2 p-2 max-w-xl relative
+    @apply  m-2 p-2 
      bg-amber-200 border-2 border-fuchsia-100 shadow-md
       hover:bg-amber-400;
     font-family: 'Mali', cursive;
+    width:  100px;
+    height: 100px;
+    object-fit: cover;
 }
 .boxs{
     @apply m-1 p-1 ;
