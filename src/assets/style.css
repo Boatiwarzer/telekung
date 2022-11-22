@@ -105,3 +105,7 @@ h1{
 /* menu.picture{
     @apply bg-contain bg-center w-96 h-96 scale-70 rounded-full m-1;
 } */
+
+.icon{
+    color: #242424;
+}

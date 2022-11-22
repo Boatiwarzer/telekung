@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mali:wght@200;400&display=swap');
 
 
+
 form {
     @apply absolute pt-14 pb-14 pl-14 pr-32 text-teal-800  text-xl  ml-4 
      bg-amber-200 rounded-xl border-2 border-fuchsia-100 shadow-md;
