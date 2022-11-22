@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mali:wght@200;400&display=swap');
 
+/* $quantity-btn-color: #95d7fc; */
+
 
 .button {
     background-color: #0d6551; /* Green */
@@ -80,14 +82,17 @@ h1{
     padding: 10px;
 }
 .profilecolor2{
-    @apply bg-contain bg-center block m-2 p-2 max-w-xl relative
+    @apply  m-2 p-2 
      bg-amber-200 border-2 border-fuchsia-100 shadow-md
       hover:bg-amber-400;
     font-family: 'Mali', cursive;
+    width:  100px;
+    height: 100px;
+    object-fit: cover;
     display: inline-block;
     object-fit: cover;
-    width: 250px; 
-    height: 250px;
+    width: 300px; 
+    height: 300px;
     
 }
 .boxs{
