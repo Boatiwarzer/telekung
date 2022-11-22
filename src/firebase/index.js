@@ -1,7 +1,10 @@
 // Import the functions you need from the SDKs you need
+// import firebase from 'firebase/index.js'
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getFirestore } from 'firebase/firestore';
+// import { ref, onUnmounted } from 'vue'
+
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -22,3 +25,13 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 export const db = getFirestore(app);
+// const formCollection = db.collection('form')
+
+// export const createUser = user => {
+//   return usersCollection.add(user)
+// }
+
+// export const getUser = async id => {
+//   const user = await usersCollection.doc(id).get()
+//   return user.exists ? user.data() : null
+// }
