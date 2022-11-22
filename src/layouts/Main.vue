@@ -1,7 +1,8 @@
 <template >
-     <div id="background" class="min-h-screen">
+<div id="background" class="min-h-screen">
    
     <div class="">
+        Telekung
         <router-link to="/" class="button">Home</router-link>
         <router-link to="/menu" class="button" >Menu</router-link>
         <router-link to="/select" class="button" >Table</router-link>
@@ -9,6 +10,13 @@
     <div>
         <h1 class="h1"><strong><ins>Telekung</ins></strong></h1>
     </div>
+</div>
+
+<div id="background2" class="min-h-screen">
+    <div>
+        
+    </div>
+
 </div>
 </template>
 
@@ -26,20 +34,24 @@ export default{
 }
 #background {
   /* background-image: url(../assets/images/back.png);  */
-    background-color: #febea1;
-    background-size: cover;
-    background-repeat: no-repeat;
-    animation: bgmain 10s infinite;
+  background-image: url("https://cdn.discordapp.com/attachments/925690469629964352/1044462310170841148/black.jpg");
+}
+
+#background2 {
+  /* background-image: url(../assets/images/back.png);  */
+  background-image: url("https://media.discordapp.net/attachments/1039195786585579550/1044466921854214184/bg-menu.jpg");
+  background-repeat: repeat-x;
 }
 .h1{
     /* display:block; */
-    @apply bg-blue-900 border-4 border-amber-200;
+    @apply border-4 border-slate-100;
+    background-color: #0d6551;
     font-size: 300%;
-    color: #FFFFAB;
+    color: #f5f5f5;
     text-align: center;
     font-family: 'Mali', cursive;
-    margin-left: 35%;
-    margin-right: 35%;
+    margin-left: 30%;
+    margin-right: 30%;
     padding: 1%;
     animation: fadeIn 2s;
     /* width: 50%;  */
