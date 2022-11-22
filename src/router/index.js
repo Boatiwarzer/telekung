@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import menu from '../views/menu.vue'
+import Order from '../views/Order.vue'
 import HomeView from '../views/HomeView.vue'
 import Select from '../views/CourseSelect.vue'
 
@@ -21,6 +22,13 @@ const router = createRouter({
       //component: menu,
       meta:{
         layout: 'Menu'
+      }
+    },
+    {
+      path: '/order',
+      name: 'order',
+      meta:{
+        layout: 'Order'
       }
     },
     {
