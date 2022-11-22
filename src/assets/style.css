@@ -87,6 +87,11 @@ h1{
     width:  100px;
     height: 100px;
     object-fit: cover;
+    display: inline-block;
+    object-fit: cover;
+    width: 250px; 
+    height: 250px;
+    
 }
 .boxs{
     @apply m-1 p-1 ;

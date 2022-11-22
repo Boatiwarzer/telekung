@@ -3,7 +3,7 @@
    
     <div class="h">
         <p class="logo"> Telekung </p>
-        <router-link to="/" class="button">Home</router-link>
+        <router-link to="/" class="butto">Home</router-link>
         <router-link to="/menu" class="button" >Menu</router-link>
         <router-link to="/select" class="button" >Table</router-link>
         <router-link to="/order" class="button" >Order</router-link>
@@ -45,9 +45,7 @@ export default{
   background-repeat: repeat-x;
 }
 
-.logo{
-    
-}
+
 .h1{
     /* display:block; */
     @apply border-4 border-slate-100;
@@ -64,6 +62,20 @@ export default{
     
     
 }
+
+.butto{
+    display: inline-block;
+    padding: 20px;
+    font-size: 100%;
+    font-family: 'Mali', cursive;
+    color: #f7f7f9;
+    background-color: #1f5000;
+    text-align: center;
+    padding: 2%;
+    margin: 4px 2px 20px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+}
 .button{
     /* display: inline-block;
     padding: 20px;
@@ -76,6 +88,17 @@ export default{
     margin: 4px 2px 20px 20px;
     border-radius: 12px;
     cursor: pointer; */
+    /* background-color: #0d6551; */
+    /* border: none;
+    color: rgb(251, 251, 251);
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px 20px 20px;
+    cursor: pointer; */
+    /* border-radius: 12px; */
     background-color: #0d6551; /* Green */
     border: none;
     color: rgb(251, 251, 251);
@@ -88,9 +111,9 @@ export default{
     cursor: pointer;
     border-radius: 12px;
 }
-.button:hover {background-color: #ffd670}
+.button:hover {background-color: #8ff848}
 .button:active {
-  background-color: #b8f66c;
+  background-color: #4e8e00;
   box-shadow: 0 5px #ca1313;
   transform: translateY(2px);
   margin-left: auto;

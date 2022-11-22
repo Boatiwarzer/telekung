@@ -11,28 +11,13 @@
         <router-link to="/" class="button">Home</router-link>
         <router-link to="/menu" class="button" >Menu</router-link>
         <router-link to="/select" class="button" >Table</router-link>
-        <router-link to="/order" class="button" >Order</router-link>
+        <router-link to="/order" class="butto" >Order</router-link>
         
     </div>
-    <!-- <div class="costom">
-        <button @click="normal" class="button">normal</button>
-        <button @click="regular" class="button">regular</button> 
-        <button @click="premium" class="button">premium</button> 
-        
-    </div>
-    <div class="regular">       
-        <img :src="this.image_src">
-    </div> -->
 
-    <div class="bg-black">
-      <div v-for="menu in selectmenu" :key="menu.id" >
-        <span><img v-if="menu.value === 1" :src="menu.picture" alt="..." class="profilecolor2"></span>
-      </div>
-      <div v-for="menu in selectmenu" :key="menu.id" >
-            <img v-if="menu.value === 2" :src="menu.picture" alt="..." class="profilecolor2">
-      </div>
-      <div v-for="menu in selectmenu" :key="menu.id" >
-            <img v-if="menu.value === 3" :src="menu.picture" alt="..." class="profilecolor2">
+    <div>
+      <div v-for="menu in selectmenu" :key="menu.id" style="display: inline; ">
+            <img v-if="menu.value === 1" :src="menu.picture" alt="..." class="profilecolor2">
       </div>
     </div>
     
