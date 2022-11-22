@@ -10,14 +10,17 @@
     <div class="header">
         <h1>My Menu</h1>
     </div>
+    <div class="bg-food">
+
     <div class="costom">
         <button @click="normal" class="button">normal</button>
         <button @click="regular" class="button">regular</button> 
         <button @click="premium" class="button">premium</button> 
-
+        
     </div>
-    <div class="regular">
+    <div class="regular">       
         <img :src="this.image_src">
+    </div>
     </div>
   
 </template>
@@ -30,7 +33,7 @@ export default {
     }}
     ,
     mounted() {
-this.normal()
+    this.normal()
     },
     methods:{
         normal(){
