@@ -2,7 +2,7 @@
 <div id="background" class="min-h-screen">
    
     <div class="h">
-        <p class="logo"> Telekung </p>
+        <p class="logo"> Tele Shabu </p>
         <router-link to="/" class="butto">Home</router-link>
         <router-link to="/menu" class="button" >Menu</router-link>
         <router-link to="/select" class="button" >Table</router-link>

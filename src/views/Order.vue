@@ -7,13 +7,16 @@
     
     
     
-    <div class="">
+    <div class="order">
         <router-link to="/" class="button">Home</router-link>
         <router-link to="/menu" class="button" >Menu</router-link>
         <router-link to="/select" class="button" >Table</router-link>
         <router-link to="/order" class="butto" >Order</router-link>
         
     </div>
+    <div class="icon">
+      <font-awesome-icon icon="fa-regular fa-cart-shopping" />
+            </div>
 
     <div>
       <div v-for="menu in selectmenu" :key="menu.id" style="display: inline; ">
