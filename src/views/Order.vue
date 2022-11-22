@@ -7,6 +7,11 @@
         <router-link to="/order" class="button" >Order</router-link>
         
     </div>
+
+      <div class="head">
+        Order
+      </div>
+
     <div class="flexbox">
     <div class="item">
     <div class="content">
@@ -28,7 +33,16 @@
       <p>44444</p>
     </div>
   </div>
+<<<<<<< Updated upstream
     </div>
+=======
+  <div class="item">
+    <div class="content">
+      <p>555</p>
+    </div>
+  </div>
+</div>
+>>>>>>> Stashed changes
 </template>
 
 <script>
@@ -38,5 +52,9 @@ export default {
 </script>
 
 <style>
-
+head{
+  color: blueviolet;
+  font-size: x-large;
+ 
+}
 </style>
