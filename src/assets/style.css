@@ -22,12 +22,16 @@
 }
     /* margin-right: 100px; */
 
-
+#background {
+    /* background-image: url(../assets/images/back.png);  */
+    background-image: url("https://cdn.discordapp.com/attachments/925690469629964352/1044462310170841148/black.jpg");
+    }
+    
 .header {
     width: 1920 px;
     height: 600 px;
     text-align: center;
-    background-image: url("https://cdn.discordapp.com/attachments/1039195786585579550/1044468314719666246/toppic.jpg");
+    /* background-image: url("https://cdn.discordapp.com/attachments/1039195786585579550/1044468314719666246/toppic.jpg"); */
   }
 .regular{
     margin-left: 130px;

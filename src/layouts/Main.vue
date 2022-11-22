@@ -1,7 +1,7 @@
 <template >
 <div id="background" class="min-h-screen">
    
-    <div class="">
+    <div class="h">
         Telekung
         <router-link to="/" class="button">Home</router-link>
         <router-link to="/menu" class="button" >Menu</router-link>
@@ -35,6 +35,7 @@ export default{
 #background {
   /* background-image: url(../assets/images/back.png);  */
   background-image: url("https://cdn.discordapp.com/attachments/925690469629964352/1044462310170841148/black.jpg");
+  padding: 2%;
 }
 
 #background2 {
@@ -46,12 +47,12 @@ export default{
     /* display:block; */
     @apply border-4 border-slate-100;
     background-color: #0d6551;
-    font-size: 300%;
+    font-size: 260%;
     color: #f5f5f5;
     text-align: center;
     font-family: 'Mali', cursive;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
     padding: 1%;
     animation: fadeIn 2s;
     /* width: 50%;  */

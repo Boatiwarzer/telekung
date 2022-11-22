@@ -1,6 +1,7 @@
 <template>
     <link rel="stylesheet" href="../src/assets/style.css">
     <link rel="stylesheet" href="../src/style.css">
+    <div id ="background">
     <div class="">
         <router-link to="/" class="button">Home</router-link>
         <router-link to="/menu" class="button" >Menu</router-link>
@@ -10,6 +11,8 @@
     <div class="header">
         <h1>My Menu</h1>
     </div>
+    </div>
+
     <div class="bg-food">
 
     <div class="costom">
