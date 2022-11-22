@@ -14,14 +14,36 @@
         <router-link to="/order" class="butto" >Order</router-link>
         
     </div>
+    <div class="costom">
+      <button @click="normal=!normal" class="button">normal</button>
+      <button @click="regular=!regular" class="button">regular</button> 
+      <button @click="premium=!premium" class="button">premium</button> 
+        
+    </div>
 
     <div>
-      <div v-for="menu in selectmenu" :key="menu.id" style="display: inline; ">
+      
+      <div >
+        <div  v-for="menu in selectmenu" :key="menu.id" style="display: inline; " >
             <img v-if="menu.value === 1" :src="menu.picture" alt="..." class="profilecolor2">
+        </div>
       </div>
+      <div>
+        <div v-for="menu in selectmenu" :key="menu.id" style="display: inline; ">
+            <img v-if="menu.value <= 2" :src="menu.picture" alt="..." class="profilecolor2">
+        </div>
+      </div>
+        <div>
+          <div v-for="menu in selectmenu" :key="menu.id" style="display: inline; ">
+            <img v-if="menu.value <= 3" :src="menu.picture" alt="..." class="profilecolor2">
+        </div>
+      </div>
+      
+      
     </div>
     
-    
+    <!-- <botton @click="dropdown=!dropdown">menu</botton>
+    <div class="rounded-lg animate-fadeIn" v-if="dropdown">this is dropdown</div> -->
   <!-- <div class="item">
     <div class="content">
       <p>22222</p>
@@ -47,6 +69,8 @@ export default {
       return {
         selectmenu: [],
         image_src:'',
+        
+
       };
     },
   async mounted(){
@@ -54,18 +78,17 @@ export default {
     this.selectmenu = useSelectMenuStore().getselectmenu;
     this.normal()
   },
-  methods:{
-        normal(){
-            this.image_src='https://cdn.discordapp.com/attachments/1039195786585579550/1044184930789371924/normal-menu.jpg';
-
-        },
-        regular(){
-            this.image_src='https://cdn.discordapp.com/attachments/1039195786585579550/1044173205092450315/regular-menu.jpg';
-        },
-        premium(){
-            this.image_src='https://cdn.discordapp.com/attachments/1039195786585579550/1044184964884865094/premium-menu.jpg';
-        },
-  },
+  // methods:{
+  //       normal(){
+  //           this.normal === false && this.regular === true && this.premium === true;
+  //       },
+  //       regular(){
+  //           this.normal === false && this.regular === false && this.premium === true;
+  //       },
+  //       premium(){
+  //           this.normal === false && this.regular === false && this.premium === false;
+  //       },
+  // },
 }
 </script>
 
