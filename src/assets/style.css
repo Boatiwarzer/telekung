@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mali:wght@200;400&display=swap');
 
+/* $quantity-btn-color: #95d7fc; */
+
 
 .button {
     background-color: #0d6551; /* Green */
@@ -89,8 +91,8 @@ h1{
     object-fit: cover;
     display: inline-block;
     object-fit: cover;
-    width: 250px; 
-    height: 250px;
+    width: 300px; 
+    height: 300px;
     
 }
 .boxs{
