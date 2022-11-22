@@ -40,16 +40,7 @@
       <p>44444</p>
     </div>
   </div>
-<<<<<<< Updated upstream
     </div>
-=======
-  <div class="item">
-    <div class="content">
-      <p>555</p>
-    </div>
-  </div>
-</div>
->>>>>>> Stashed changes
 </template>
 
 <script>
