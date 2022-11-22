@@ -2,14 +2,14 @@
 <div id="background" class="min-h-screen">
    
     <div class="h">
-        Telekung
+        <p class="logo"> Telekung </p>
         <router-link to="/" class="button">Home</router-link>
         <router-link to="/menu" class="button" >Menu</router-link>
         <router-link to="/select" class="button" >Table</router-link>
         <router-link to="/order" class="button" >Order</router-link>
     </div>
     <div>
-        <h1 class="h1"><strong><ins>Telekung</ins></strong></h1>
+        <h1 class="h1"><strong><ins>Tele Shabu</ins></strong></h1>
     </div>
 </div>
 
@@ -43,6 +43,10 @@ export default{
   /* background-image: url(../assets/images/back.png);  */
   background-image: url("https://media.discordapp.net/attachments/1039195786585579550/1044466921854214184/bg-menu.jpg");
   background-repeat: repeat-x;
+}
+
+.logo{
+    
 }
 .h1{
     /* display:block; */
