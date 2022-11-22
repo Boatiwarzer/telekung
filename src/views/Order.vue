@@ -17,12 +17,12 @@
     <div class="icon">
       <font-awesome-icon icon="fa-regular fa-cart-shopping" />
             </div>
-    <div class="costom">
+    <!-- <div class="costom">
       <button @click="normal=!normal" class="button">normal</button>
       <button @click="regular=!regular" class="button">regular</button> 
       <button @click="premium=!premium" class="button">premium</button> 
         
-    </div>
+    </div> -->
 
     <div>
       
