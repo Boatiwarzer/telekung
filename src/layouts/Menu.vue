@@ -3,6 +3,7 @@
         <router-link to="/" class="button">Home</router-link>
         <router-link to="/menu" class="button" >Menu</router-link>
         <router-link to="/select" class="button" >Table</router-link>
+        
     </div>
     <div>
         <div class="header">

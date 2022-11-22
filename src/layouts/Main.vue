@@ -6,6 +6,7 @@
         <router-link to="/" class="button">Home</router-link>
         <router-link to="/menu" class="button" >Menu</router-link>
         <router-link to="/select" class="button" >Table</router-link>
+        <router-link to="/order" class="button" >Order</router-link>
     </div>
     <div>
         <h1 class="h1"><strong><ins>Telekung</ins></strong></h1>
