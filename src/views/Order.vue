@@ -16,7 +16,7 @@
     </div>
 
     <div>
-      <div v-for="menu in selectmenu" :key="menu.id" >
+      <div v-for="menu in selectmenu" :key="menu.id" style="display: inline; ">
             <img v-if="menu.value === 1" :src="menu.picture" alt="..." class="profilecolor2">
       </div>
     </div>

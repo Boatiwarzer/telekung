@@ -84,6 +84,11 @@ h1{
      bg-amber-200 border-2 border-fuchsia-100 shadow-md
       hover:bg-amber-400;
     font-family: 'Mali', cursive;
+    display: inline-block;
+    object-fit: cover;
+    width: 250px; 
+    height: 250px;
+    
 }
 .boxs{
     @apply m-1 p-1 ;
