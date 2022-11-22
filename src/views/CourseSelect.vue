@@ -55,7 +55,19 @@ export default {
     await useTableStore().fetchData();
     this.table = useTableStore().getTable;
     console.log(this.table);
-  },
+  },computed: {
+        sortedArray: function() {
+            function compare(a, b) {
+                if (a.name < b.name)
+                    return -1;
+                if (a.name > b.name)
+                    return 1;
+                return 0;
+            }
+
+            return this.tables.sort(compare);
+        }
+    }
 }
 </script>
 
