@@ -108,6 +108,7 @@ export default {
 			}
 		},
 		computed: {
+      
 
 		}
   // methods:{
