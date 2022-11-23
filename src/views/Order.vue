@@ -1,7 +1,7 @@
 <template>
     <link rel="stylesheet" href="../src/assets/style.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-    
+    <link rel="stylesheet" href="../src/assets/main.css">
+
     <div id="background" class="min-h-screen">
     <div>
       <router-link to="/" class="button">Home</router-link>
