@@ -2,16 +2,16 @@
 <div id="background" class="min-h-screen">
    
     <div class="h" >
-        <div class="name">
+        <!-- <div class="name">
         <strong>Tele Shabu!</strong>
-        </div>
+        </div> -->
 
         <div>
         <router-link to="/" class="butto">Home</router-link>
-        <router-link to="/menu" class="button" >Menu</router-link>
-        <router-link to="/select" class="button" >Table</router-link>
-        <router-link to="/order" class="button" >Order</router-link>
-
+        <router-link to="/menu" class="button1" >Menu</router-link>
+        <router-link to="/select" class="button1" >Table</router-link>
+        <router-link to="/order" class="button1" >Order</router-link>
+            
         </div>
         
        
@@ -19,11 +19,14 @@
     </div>
     
 </div>
-<div class="">
-    <img src="https://cdn.discordapp.com/attachments/1039195786585579550/1044468314719666246/toppic.jpg" alt="img">
-    <div class="slo">อิ่มอร่อยกับ เทเลชาบู หม้อไฟแห่งความสุข</div>
 
+<div class="gap-8 columns-3xs ...">
+    <img class="w-full aspect-video ..." src="https://i.pinimg.com/564x/4c/62/53/4c6253a290d6d5bcb9c6c69685dde500.jpg" />
+    <img class="w-full aspect-square ..." src="https://cdn.discordapp.com/attachments/1039195786585579550/1044468314719666246/toppic.jpg" />
+    <div class="slo">อิ่มอร่อยกับ เทเลชาบู หม้อไฟแห่งความสุข</div>
+    <!-- ... -->
 </div>
+
 
     <!-- <div>
         <h1 class="h1"><strong><ins>Tele Shabu</ins></strong></h1>
@@ -56,16 +59,16 @@ export default{
   padding: 2%;
 }
 
-.h{
+/* .h{
     display: flex;
     color: #ffffff;
     justify-content: space-between; 
     font-family: 'Mali', cursive;
-    font-size: 100%;
-}
+} */
 
 .name{
     font-size: 200%;
+    color: #f8f8f8;
 }
 
 /* .h1{
@@ -93,12 +96,11 @@ export default{
     background-color: #3a830c;
     text-align: center;
     padding: 2%;
-    margin: 4px 2px 20px 20px;
     border-radius: 12px;
     cursor: pointer;
     font-family: 'Mali', cursive;
 }
-.button{
+.button1{
     padding: 3px 10px;
     font-size: 100%;
     font-family: 'Prompt', sans-serif;
@@ -106,14 +108,13 @@ export default{
     text-align: center;
     padding: 2%;
     margin-left: auto;
-    animation: fadeIn 3s;
     font-family: 'Mali', cursive;
     
     
    
 }
-.button:hover {background-color: #176d40;border-radius: 12px;}
-.button:active {
+.button1:hover {background-color: #176d40;border-radius: 12px;}
+.button1:active {
   background-color: #2c7b52;
   box-shadow: 0 5px #ca1313;
   transform: translateY(2px);
