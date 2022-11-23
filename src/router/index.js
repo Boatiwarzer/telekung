@@ -2,6 +2,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 import menu from '../views/menu.vue'
 import Order from '../views/Order.vue'
 import Select from '../views/CourseSelect.vue'
+import Regular from '../views/regular.vue'
+import Premium from '../views/premium.vue'
 
 
 
@@ -32,6 +34,21 @@ const router = createRouter({
         layout: 'Order'
       }
     },
+    {
+      path: '/regular',
+      name: 'regular',
+      meta:{
+        layout: 'Regular'
+      }
+    },
+    {
+      path: '/premium',
+      name: 'premium',
+      meta:{
+        layout: 'Premium'
+      }
+    },
+
     {
       path: '/select',
       name: 'select',

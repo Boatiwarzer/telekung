@@ -17,7 +17,9 @@ import Main from '@/layouts/Main.vue'
 import Menu from '@/views/menu.vue'
 import Select from '@/views/CourseSelect.vue'
 import Order from '@/views/Order.vue'
+import Regular from './views/regular.vue'
 import Admin from '@/views/Admin.vue'
+import Premium from './views/premium.vue'
 
 
 // import Default from '@/layouts/Default.vue'
@@ -28,6 +30,8 @@ export default {
     Menu,
     Select,
     Order,
+    Regular,
+    Premium,
     Admin,
     
   },
