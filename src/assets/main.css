@@ -14,7 +14,7 @@ form {
     
     }
 .box{
-    @apply mt-24 flex justify-center 	;
+    @apply mt-24 flex justify-center  ;
 }
 
 input{
