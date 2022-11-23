@@ -1,6 +1,6 @@
 <template>
     <link rel="stylesheet" href="../src/assets/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     
     <div id="background" class="min-h-screen">
     <div>
@@ -11,9 +11,9 @@
       <div class="dropdown">
           <router-link to="/order" class="dropbtn" >Order</router-link>
           <div class="dropdown-content">
-            <a href="#">Normal</a>
-            <a href="#">Regular</a>
-            <a href="#">Premium</a>
+            <a href="Order">Normal</a>
+            <a href="regular">Regular</a>
+            <a href="premium">Premium</a>
           </div>
     
       </div>
