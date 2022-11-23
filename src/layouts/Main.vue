@@ -109,6 +109,7 @@ export default{
     animation: fadeIn 3s;
     font-family: 'Mali', cursive;
     
+    
    
 }
 .button:hover {background-color: #176d40;border-radius: 12px;}
