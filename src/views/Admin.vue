@@ -2,18 +2,53 @@
 <template >
     <link rel="stylesheet" href="../assets/main.css">
     <link rel="stylesheet" href="../src/assets/style.css">
-    <body id="background" class="min-h-screen">
-        <h1>Admin</h1>
-        <h2>1</h2>
-    </body>
+    <h1>Admin</h1>
+    <div class="adminflexbox">
+        <div class="adminitem" v-for="ch in form" :key="ch.id">
+            <div class="admincontent">
+                <div>
+                    {{ch.tableselect}}
+                </div>
+                <div>
+                    {{ch.person}}
+                </div>
+                <div>
+                    {{ch.name}}
+                </div>
+                <div>
+                    {{ch.course}}
+                </div>
+                <div>
+                    {{ch.date}}
+                </div>
+                <div>
+                    {{ch.telephone}}
+                </div>
+            </div>
+        </div>  
+  </div>
+
+    
             
   
 </template>
 
 <script>
+import { useFormStore } from '../stores/createque';
 export default {
-
+    data() {
+      return {
+        form: [],
+      };
+    },
+  async mounted(){
+    await useFormStore().fetchData();
+    this.form = useFormStore().getForm;
+    console.log(this.form);
+  },
 }
+
+
 </script>
 
 <style>

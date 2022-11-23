@@ -19,7 +19,7 @@
 
         <select v-model="tableselect" name="tables" id="tables" required="required">
             <option value="">--select--</option>
-            <option v-for="table in tables" :key="table.id" value="table">{{table.no}}</option>
+            <option v-for="table in tables" :key="table.id">{{table.no}}</option>
         </select><br>
         <label for="person">Number of people : </label>
         <input v-model="person" class="box1" type="number" id="person" name="person" size="25" placeholder="Plese enter the number of people" min="1" max="8" required><br>
@@ -30,7 +30,7 @@
             <option value="">--select--</option>
             <option value="normal" class="Normal">  Normal</option>
             <option value="regular" class="Regular">Regular</option>
-            <option value="premiur" class="Premium">Premium</option>
+            <option value="premium" class="Premium">Premium</option>
         </select><br>
         <label for="Select-day">Select day : </label>
         <input v-model="date" type="date" class="date" name="date" required><br>
@@ -48,8 +48,8 @@
 <script>
 
 import { useTableStore } from '../stores/sendForm';
-const documentPath = 'form/form2';
-import { collection, getDoc, getDocs } from "firebase/firestore";
+// import { projectFirestore } from '../firebase/index';
+import { collection, getDoc, getDocs, addDoc } from "firebase/firestore";
 import { db } from '@/firebase';
 export default {
     data() {
@@ -87,11 +87,25 @@ export default {
     methods: {
         async signInButtonPressed() {
             console.log(this.name, this.tableselect,this.date,this.course,this.person,this.telephone);
+            const docRef = await addDoc(collection(db, "form"), {
+                tableselect: this.tableselect,
+                person: this.person,
+                name: this.name,
+                course: this.course,
+                date: this.date,
+                telephone: this.telephone,
+        });
+    //         let formUser = {
+    //         tableselect: this.tableselect,
+    //         person: this.person,
+    //         }
+    //     projectFirestore.collection('formUser').add(formUser)
+    }
                
 
-        }
     }
 }
+
 </script>
 
 <style>

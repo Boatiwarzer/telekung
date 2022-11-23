@@ -10,6 +10,7 @@ form {
      bg-amber-200 rounded-xl border-2 border-fuchsia-100 shadow-md;
       box-shadow: 6px 2px 8px 4px rgba(0, 0, 0, 0.39);
       font-family: 'Mali', cursive;
+      
     
     }
 .box{
@@ -35,4 +36,29 @@ select{
   margin: 4px 2px 20px 20px;
   cursor: pointer;
   border-radius: 12px;
+}.admin {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items:flex-start;
+  box-sizing: border-box;
+  margin: 0px -10px;
+}
+
+.adminitem {
+  box-sizing: border-box;
+  width: 33.33%;
+  margin-bottom: 23px;
+  padding: 0px 10px;
+}
+
+.admincontent {
+  color: #242424;
+  background-color: #1bbefe;
+  font-weight: 600;
+  text-align: center;
+  box-sizing: border-box;
+  height: 100%;
+  padding: 10px;
 }

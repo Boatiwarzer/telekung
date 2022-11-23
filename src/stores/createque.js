@@ -2,12 +2,12 @@ import { defineStore } from 'pinia';
 import { collection, getDoc, getDocs } from "firebase/firestore";
 import { db } from '@/firebase';
 
-export const useSelectMenuStore = defineStore('form', {
+export const useFormStore = defineStore('form', {
     state: () => ({
         form: ({form: [] })
     }),
     getters:{
-        getselectmenu: (state) => {
+        getForm: (state) => {
             return state.form
         }
     },
