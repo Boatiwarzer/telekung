@@ -2,25 +2,27 @@
     <link rel="stylesheet" href="../src/assets/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
-    
-    
-    
-    
     <div id="background" class="min-h-screen">
     <div>
       <router-link to="/" class="button">Home</router-link>
+        <router-link to="/" class="button">Home</router-link>
         <router-link to="/menu" class="button" >Menu</router-link>
         <router-link to="/select" class="button" >Table</router-link>
-        <router-link to="/order" class="butto" >Order</router-link>
-   
-        
-    <div>
+      <div class="dropdown">
+          <router-link to="/order" class="dropbtn" >Order</router-link>
+          <div class="dropdown-content">
+            <a href="#">Normal</a>
+            <a href="#">Regular</a>
+            <a href="#">Premium</a>
+          </div>
+    
+      </div>
       <div class="topright">
         <div><font-awesome-icon icon="fa-solid fa-cart-shopping" />shop</div>
-
+      </div>
 </div>
 </div>
-</div></div>
+    
            
     <!-- <div class="costom">
       <button @click="normal=!normal" class="button">normal</button>
