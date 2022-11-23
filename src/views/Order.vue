@@ -2,19 +2,19 @@
     <link rel="stylesheet" href="../src/assets/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
-    
-    
-    
-    
     <div id="background" class="min-h-screen">
-    <div class="order">
         <router-link to="/" class="button">Home</router-link>
         <router-link to="/menu" class="button" >Menu</router-link>
         <router-link to="/select" class="button" >Table</router-link>
-        <router-link to="/order" class="butto" >Order</router-link>
-   
-        
-    <div>
+      <div class="dropdown">
+          <router-link to="/order" class="dropbtn" >Order</router-link>
+          <div class="dropdown-content">
+            <a href="#">Normal</a>
+            <a href="#">Regular</a>
+            <a href="#">Premium</a>
+          </div>
+    
+      </div>
       <div class="topright">
       <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="70px" height="100px" viewBox="0 0 902.86 902.86" style="enable-background:new 0 0 902.86 902.86;"
@@ -34,7 +34,7 @@
     </g>
   </svg></div>
 </div>
-</div></div>
+    
            
     <!-- <div class="costom">
       <button @click="normal=!normal" class="button">normal</button>
