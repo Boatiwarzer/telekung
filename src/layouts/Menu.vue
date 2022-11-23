@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
     <div class="">
         <router-link to="/" class="button">Home</router-link>
         <router-link to="/menu" class="button" >Menu</router-link>
@@ -21,4 +21,4 @@ export default {
 
 <style>
 
-</style>
+</style> -->

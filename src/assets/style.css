@@ -3,23 +3,37 @@
 /* $quantity-btn-color: #95d7fc; */
 .topright {
     position: absolute;
-    top: -5px;
-    right: 10px;}
+    top: 30px;
+    right: 30px;}
 
+
+.button{
+    padding: 3px 10px;
+    font-size: 100%;
+    font-family: 'Prompt', sans-serif;
+    color: #f8f8f8;
+    text-align: center;
+    padding: 2%;
+    margin-left: auto;
+    font-family: 'Mali', cursive;
+    
+}
 .butto {
-    /* background-color: #0d6551;  */
+    background-color: #0d6551; 
     border: none;
     color: rgb(251, 251, 251);
     padding: 20px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
+    /* text-decoration: none; */
+    /* display: inline-block; */
     font-size: 16px;
     margin: 4px 2px 20px 20px;
     cursor: pointer;
     border-radius: 12px;
+    font-family: 'Mali', cursive;
 
   }
+
 .costom{
     text-align: center;
 
@@ -125,11 +139,18 @@ h1{
     color: #894a4a;
 } */
 .dropbtn {
-    background-color: #04AA6D;
-    color: white;
+    background-color: #0d6551; 
     padding: 16px;
     font-size: 16px;
     border: none;
+    color: rgb(251, 251, 251);
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px 20px 20px;
+    cursor: pointer;
+    border-radius: 12px;
+    font-family: 'Mali', cursive;
   }
   
   .dropdown {

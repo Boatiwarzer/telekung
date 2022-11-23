@@ -1,4 +1,3 @@
-
 <template>
     <link rel="stylesheet" href="../assets/main.css">
     <div id="background" class="min-h-screen">
