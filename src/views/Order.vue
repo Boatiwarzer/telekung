@@ -12,6 +12,7 @@
         <router-link to="/menu" class="button" >Menu</router-link>
         <router-link to="/select" class="button" >Table</router-link>
         <router-link to="/order" class="butto" >Order</router-link>
+   
         
     <div>
       <div class="topright">
@@ -32,6 +33,7 @@
       </g>
     </g>
   </svg></div>
+</div>
 </div></div>
            
     <!-- <div class="costom">
