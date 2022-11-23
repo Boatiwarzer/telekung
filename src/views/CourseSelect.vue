@@ -10,30 +10,30 @@
         
     </div>
     <div class="box">
-        <form class="entable">
+        <form class="entable" @submit.prevent="signInButtonPressed">
         <label for="table">Select table:</label>
         
         <!-- <div v-for="profile in profiles" :key="profile.id" class="profilecolor2">  -->
 
-        <select name="table" id="table" form="table" required>
+        <select v-model="tableselect" name="table" id="table" form="table" required>
             <option v-for="tables in table" :key="tables.id" value="tables">{{tables.tableno}}</option>
             
         </select><br>
         <label for="name">First name: </label>
-        <input type="text" class="name" name="name" placeholder="Plese enter your name"><br>
+        <input v-model="name" type="text" class="name" name="name" placeholder="Plese enter your name"><br>
         <label for="course">Select course : </label>
-        <select name="course" class="course" form="corse">
+        <select v-model="course" name="course" class="course" form="corse">
             <option value="normal" class="Normal">  Normal</option>
             <option value="regular" class="Regular">Regular</option>
             <option value="premiur" class="Premium">Premium</option>
         </select><br>
         <label for="person">Number of people : </label>
-        <input class="box1" type="text" id="person" name="person" placeholder="Plese enter the number of people"><br>
+        <input v-model="person" class="box1" type="text" id="person" name="person" size="25" placeholder="Plese enter the number of people"><br>
         <label for="Select-day">Select day : </label>
-        <input type="date" class="date"><br>
+        <input v-model="date" type="date" class="date" name="date"><br>
         <label for="Telephone">Telephone: </label>
-        <input type="text" id="telephone" name="telephone" placeholder="Plese enter the number of people"><br>
-        <button class="btn" type="submit">Make to plan</button>
+        <input v-model="telephone" type="text" id="telephone" name="telephone" size="25" placeholder="Plese enter the number of people"><br>
+        <button class="btn" type="submit" >Make to plan</button>
         <!-- <input type="submit" value="Submit" > -->
 
         </form>
@@ -45,10 +45,22 @@
 <script>
 
 import { useTableStore } from '../stores/sendForm';
+const documentPath = 'form/form2';
+import { collection, getDoc, getDocs } from "firebase/firestore";
+import { db } from '@/firebase';
 export default {
     data() {
       return {
         table: [],
+        form: [],
+        name:'',
+        tableselect:'',
+        course:'',
+        person:'',
+        date:'',
+        telephone:'',
+        firebaseData: null,
+        state: 'loading'
       };
     },
   async mounted(){
@@ -66,6 +78,14 @@ export default {
             }
 
             return this.tables.sort(compare);
+        }
+  
+  },
+    methods: {
+        async signInButtonPressed() {
+            console.log(this.name, this.tableselect,this.date,this.course,this.person,this.telephone);
+               
+
         }
     }
 }

@@ -14,7 +14,9 @@ export const useSelectMenuStore = defineStore('selectmenu', {
     actions:{
         async fetchData() {
             const queryData = await getDocs(collection(db, 'selectmenu'));
-            this.selectmenu = queryData.docs.map((doc) => doc.data());          // queryData.forEach(doc => {
+            this.selectmenu = queryData.docs.map((doc) => doc.data()); 
+            
+                // queryData.forEach(doc => {
             //     console.log(doc.data());
                 
             // });

@@ -50,7 +50,7 @@
             <img v-if="menu.value === 3" :src="menu.picture" alt="..." class="profilecolor2">
         </div>
       </div>
-      <div id="app">
+      <!-- <div id="app">
 		    <div class="wrapper">
           <button class="btn btn--minus" @click="changeCounter('-1')" type="button" name="button">
           -
@@ -61,7 +61,7 @@
           </button>
         </div>
 
-	</div>
+	  </div> -->
       
       
       
