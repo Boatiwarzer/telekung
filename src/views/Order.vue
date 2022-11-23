@@ -6,17 +6,19 @@
     
     
     
-    
+    <div id="background" class="min-h-screen">
     <div class="order">
         <router-link to="/" class="button">Home</router-link>
         <router-link to="/menu" class="button" >Menu</router-link>
         <router-link to="/select" class="button" >Table</router-link>
         <router-link to="/order" class="butto" >Order</router-link>
-        
+
+        <div class="icon">
+          <i class="fa-regular fa-cart-shopping"></i>
+          </div>
+      </div>
     </div>
-    <div class="icon">
-      <font-awesome-icon icon="fa-regular fa-cart-shopping" />
-            </div>
+    
     <!-- <div class="costom">
       <button @click="normal=!normal" class="button">normal</button>
       <button @click="regular=!regular" class="button">regular</button> 
