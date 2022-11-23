@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Mali:wght@200;400&display=swap');
 
 /* $quantity-btn-color: #95d7fc; */
+.topright {
+    position: absolute;
+    top: 8px;
+    right: 30px;}
 
-
-.button {
-    background-color: #0d6551; /* Green */
+.butto {
+    /* background-color: #0d6551;  */
     border: none;
     color: rgb(251, 251, 251);
     padding: 20px;
@@ -26,7 +29,7 @@
 
 #background {
     /* background-image: url(../assets/images/back.png);  */
-    background-image: url("https://cdn.discordapp.com/attachments/925690469629964352/1044462310170841148/black.jpg");
+    background-image: url("https://cdn.discordapp.com/attachments/1039195786585579550/1044466921854214184/bg-menu.jpg");
     }
     
 .header {
@@ -95,6 +98,18 @@ h1{
     height: 300px;
     
 }
+.profilecolor{
+    font-family: 'Mali', cursive;
+    width:  100px;
+    height: 100px;
+    margin-left: 40px;
+    object-fit: cover;
+    display: inline-block;
+    object-fit: cover;
+    width: 300px; 
+    height: 300px;
+    
+}
 .boxs{
     @apply m-1 p-1 ;
 }
@@ -106,6 +121,6 @@ h1{
     @apply bg-contain bg-center w-96 h-96 scale-70 rounded-full m-1;
 } */
 
-.icon{
-    color: #242424;
-}
+/* .icon{
+    color: #894a4a;
+} */

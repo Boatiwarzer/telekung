@@ -26,3 +26,16 @@ select{
   @apply border-2 border-cyan-200 mb-2
 
 }
+.butto {
+  background-color: #0d6551; 
+  border: none;
+  color: rgb(251, 251, 251);
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  /* display: inline-block; */
+  font-size: 16px;
+  margin: 4px 2px 20px 20px;
+  cursor: pointer;
+  border-radius: 12px;
+}
