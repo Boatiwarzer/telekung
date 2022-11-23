@@ -15,10 +15,7 @@ form {
 .box{
     @apply mt-24 flex justify-center 	;
 }
-.box1{
-  /* width: 66%;  */
-  
-}
+
 input{
   @apply border-2 border-cyan-200 mb-2 
 }

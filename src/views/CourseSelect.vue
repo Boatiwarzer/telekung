@@ -22,7 +22,7 @@
             
         </select><br>
         <label for="name">First name: </label>
-        <input v-model="name" type="text" class="name" name="name" placeholder="Plese enter your name"><br>
+        <input v-model="name" type="text" class="names" name="name" placeholder="Plese enter your name"><br>
         <label for="course">Select course : </label>
         <select v-model="course" name="course" class="course" form="corse">
             <option value="normal" class="Normal">  Normal</option>
