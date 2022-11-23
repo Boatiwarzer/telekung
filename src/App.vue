@@ -17,6 +17,8 @@ import Main from '@/layouts/Main.vue'
 import Menu from '@/views/menu.vue'
 import Select from '@/views/CourseSelect.vue'
 import Order from '@/views/Order.vue'
+import Admin from '@/views/Admin.vue'
+
 
 // import Default from '@/layouts/Default.vue'
 export default {
@@ -26,6 +28,7 @@ export default {
     Menu,
     Select,
     Order,
+    Admin,
     
   },
   computed:{

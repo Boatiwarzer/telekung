@@ -38,8 +38,12 @@ const router = createRouter({
       meta:{
         layout: 'Select'
       }
-      // component: select,
-      
+    },{
+      path: '/admin',
+      name: 'admin',
+      meta:{
+        layout: 'Admin'
+      }
     }
   ]
 })

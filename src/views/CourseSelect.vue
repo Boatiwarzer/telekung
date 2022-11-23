@@ -13,29 +13,30 @@
     </div>
     <div class="box">
         <form class="entable" @submit.prevent="signInButtonPressed">
-        <label for="table">Select table:</label>
+        <label for="tables">Select table:</label>
         
         <!-- <div v-for="profile in profiles" :key="profile.id" class="profilecolor2">  -->
 
-        <select v-model="tableselect" name="table" id="table" form="table" required>
-            <option v-for="tables in table" :key="tables.id" value="tables">{{tables.tableno}}</option>
-            
+        <select v-model="tableselect" name="tables" id="tables" required="required">
+            <option value="">--select--</option>
+            <option v-for="table in tables" :key="table.id" value="table">{{table.no}}</option>
         </select><br>
+        <label for="person">Number of people : </label>
+        <input v-model="person" class="box1" type="number" id="person" name="person" size="25" placeholder="Plese enter the number of people" min="1" max="8" required><br>
         <label for="name">First name: </label>
-        <input v-model="name" type="text" class="names" name="name" placeholder="Plese enter your name"><br>
+        <input v-model="name" type="text" class="names" name="name" placeholder="Plese enter your name" required><br>
         <label for="course">Select course : </label>
-        <select v-model="course" name="course" class="course" form="corse">
+        <select v-model="course" name="course" class="course" required="required">
+            <option value="">--select--</option>
             <option value="normal" class="Normal">  Normal</option>
             <option value="regular" class="Regular">Regular</option>
             <option value="premiur" class="Premium">Premium</option>
         </select><br>
-        <label for="person">Number of people : </label>
-        <input v-model="person" class="box1" type="text" id="person" name="person" size="25" placeholder="Plese enter the number of people"><br>
         <label for="Select-day">Select day : </label>
-        <input v-model="date" type="date" class="date" name="date"><br>
+        <input v-model="date" type="date" class="date" name="date" required><br>
         <label for="Telephone">Telephone: </label>
-        <input v-model="telephone" type="text" id="telephone" name="telephone" size="25" placeholder="Plese enter the number of people"><br>
-        <button class="btn" type="submit" >Make to plan</button>
+        <input v-model="telephone" type="text" id="telephone" name="telephone" size="25" placeholder="Plese enter the number of people" required><br>
+        <button class="btn" type="submit" value="Submit">Make to plan</button>
         <!-- <input type="submit" value="Submit" > -->
 
         </form>
@@ -53,7 +54,7 @@ import { db } from '@/firebase';
 export default {
     data() {
       return {
-        table: [],
+        tables: [],
         form: [],
         name:'',
         tableselect:'',
@@ -67,8 +68,8 @@ export default {
     },
   async mounted(){
     await useTableStore().fetchData();
-    this.table = useTableStore().getTable;
-    console.log(this.table);
+    this.tables = useTableStore().getTables;
+    console.log(this.tables);
   },computed: {
         sortedArray: function() {
             function compare(a, b) {

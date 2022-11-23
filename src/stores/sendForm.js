@@ -2,19 +2,19 @@ import { defineStore } from 'pinia';
 import { collection, getDoc, getDocs } from "firebase/firestore";
 import { db } from '@/firebase';
 
-export const useTableStore = defineStore('table', {
+export const useTableStore = defineStore('tables', {
     state: () => ({
-        table: ({table: [] })
+        tables: ({tables: [] })
     }),
     getters:{
-        getTable: (state) => {
-            return state.table
+        getTables: (state) => {
+            return state.tables
         }
     },
     actions:{
         async fetchData() {
-            const queryData = await getDocs(collection(db, 'table'));
-            this.table = queryData.docs.map((doc) => doc.data());          // queryData.forEach(doc => {
+            const queryData = await getDocs(collection(db, 'tables'));
+            this.tables = queryData.docs.map((doc) => doc.data());          // queryData.forEach(doc => {
             //     console.log(doc.data());
                 
             // });
