@@ -3,7 +3,7 @@
    
     <div class="h flex justify-between" style="">
         <div>
-        <strong><ins>Tele Shabu</ins></strong>
+        <strong><ins>Tele Shabu!</ins></strong>
         </div>
         <div>
         <router-link to="/" class="butto">Home</router-link>
