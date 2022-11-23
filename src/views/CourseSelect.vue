@@ -36,6 +36,7 @@
         <input v-model="date" type="date" class="date" name="date" required><br>
         <label for="Telephone">Telephone: </label>
         <input v-model="telephone" type="text" id="telephone" name="telephone" size="25" placeholder="Plese enter the number of people" required><br>
+
         <button class="btn" type="submit" value="Submit">Make to plan</button>
         <!-- <input type="submit" value="Submit" > -->
 
@@ -94,6 +95,7 @@ export default {
                 course: this.course,
                 date: this.date,
                 telephone: this.telephone,
+                status: "not_check"
         });
     //         let formUser = {
     //         tableselect: this.tableselect,
