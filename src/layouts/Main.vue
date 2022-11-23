@@ -1,19 +1,28 @@
 <template >
 <div id="background" class="min-h-screen">
    
-    <div class="h" style="">
+    <div class="h" >
         <div class="name">
-        <strong><ins>Tele Shabu!</ins></strong>
+        <strong>Tele Shabu!</strong>
         </div>
+
         <div>
         <router-link to="/" class="butto">Home</router-link>
         <router-link to="/menu" class="button" >Menu</router-link>
         <router-link to="/select" class="button" >Table</router-link>
         <router-link to="/order" class="button" >Order</router-link>
+
+        </div>
         
-        
+       
+
     </div>
+    
 </div>
+<div class="">
+    <img src="https://cdn.discordapp.com/attachments/1039195786585579550/1044468314719666246/toppic.jpg" alt="img">
+    <div class="slo">อิ่มอร่อยกับ เทเลชาบู หม้อไฟแห่งความสุข</div>
+
 </div>
 
     <!-- <div>
@@ -21,12 +30,12 @@
     </div> -->
 
 
-<div id="background2" class="min-h-screen">
+<!-- <div id="background2" class="min-h-screen">
     <div>
         
     </div>
 
-</div>
+</div> -->
 </template>
 
 <script>
@@ -47,11 +56,6 @@ export default{
   padding: 2%;
 }
 
-#background2 {
-  /* background-image: url(../assets/images/back.png);  */
-  background-image: url("https://media.discordapp.net/attachments/1039195786585579550/1044466921854214184/bg-menu.jpg");
-  background-repeat: repeat-x;
-}
 .h{
     display: flex;
     color: #ffffff;
@@ -98,7 +102,7 @@ export default{
     padding: 3px 10px;
     font-size: 100%;
     font-family: 'Prompt', sans-serif;
-    color: #FFFFAB;
+    color: #f8f8f8;
     text-align: center;
     padding: 2%;
     margin-left: auto;
@@ -110,10 +114,17 @@ export default{
 }
 .button:hover {background-color: #176d40;border-radius: 12px;}
 .button:active {
-  background-color: #4e8e00;
+  background-color: #2c7b52;
   box-shadow: 0 5px #ca1313;
   transform: translateY(2px);
   margin-left: auto;
   border-radius: 12px;
+}
+
+
+
+.slo{
+    font-size: 120%;
+    text-align: left;
 }
 </style>
