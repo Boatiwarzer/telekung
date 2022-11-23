@@ -12,10 +12,11 @@
         <router-link to="/menu" class="button" >Menu</router-link>
         <router-link to="/select" class="button" >Table</router-link>
         <router-link to="/order" class="butto" >Order</router-link>
-      </div>
-    <div class="icon">
+        
+    <div>
+      <div class="topright">
       <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="100px" height="100px" viewBox="0 0 902.86 902.86" style="enable-background:new 0 0 902.86 902.86;"
+	 width="70px" height="100px" viewBox="0 0 902.86 902.86" style="enable-background:new 0 0 902.86 902.86;"
 	 xml:space="preserve">
     <g>
       <g>
@@ -31,7 +32,7 @@
       </g>
     </g>
   </svg></div>
-</div>
+</div></div>
            
     <!-- <div class="costom">
       <button @click="normal=!normal" class="button">normal</button>
