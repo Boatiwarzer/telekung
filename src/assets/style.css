@@ -67,8 +67,10 @@ button:hover{
     /* background-image: url("https://cdn.discordapp.com/attachments/1039195786585579550/1044468314719666246/toppic.jpg"); */
   }
 .regular{
-    margin-left: 130px;
-    margin-right: 130px;
+    margin-left: 280px;
+    margin-right: 140px;
+    width:60%;
+    height:20%;
 }
 .bg-food{
     background-image: url("https://cdn.discordapp.com/attachments/1039195786585579550/1044466921854214184/bg-menu.jpg")
