@@ -18,7 +18,7 @@
     
       </div>
       <div class="topright">
-        <div><font-awesome-icon icon="fa-solid fa-cart-shopping" />shop</div>
+        <router-link to="/cart" ><font-awesome-icon icon="fa-solid fa-cart-shopping " style="color:brown" size="2x" /></router-link>
       </div>
 </div>
 </div>
@@ -29,9 +29,9 @@
         <div class = "col-md-4" v-for="menu in selectmenu" :key="menu.value===1" style="display: inline-block;" >
             <div v-if="menu.value === 1" class="profilecolor">
             <img :src="menu.picture" class="profilecolor2">
-            <h3>ชื่อเมนู : {{menu.name}}</h3>
+            <h3>&nbsp;&nbsp;&nbsp;&nbsp;ชื่อเมนู : {{menu.name}}</h3>
             <div class="card-footer">
-              <button class="btn btn-primary" @click="addCard(menu)">Add To Cart</button>
+              &nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-primary" @click="addCard(menu)">Add To Cart</button>
           </div>
             </div>
         </div>
@@ -43,9 +43,9 @@
         <div class = "col-md-4" v-for="menu in selectmenu" :key="menu.value===1" style="display: inline-block;" >
             <div v-if="menu.value === 2" class="profilecolor">
             <img :src="menu.picture" class="profilecolor2">
-            <h3>ชื่อเมนู : {{menu.name}}</h3>
+            <h3>&nbsp;&nbsp;&nbsp;&nbsp;ชื่อเมนู : {{menu.name}}</h3>
             <div class="card-footer">
-              <button class="btn btn-primary" @click="addCard(menu)">Add To Cart</button>
+              &nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-primary" @click="addCard(menu)">Add To Cart</button>
           </div>
             </div>
         </div>

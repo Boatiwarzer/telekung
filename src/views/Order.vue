@@ -19,7 +19,8 @@
   
     </div>
     <div class="topright">
-      <div><font-awesome-icon icon="fa-solid fa-cart-shopping" />shop</div>
+      <router-link to="/cart" ><font-awesome-icon icon="fa-solid fa-cart-shopping " style="color:brown" size="2x" /></router-link>
+
     </div>
 </div>
 </div>
@@ -50,7 +51,7 @@
           <!-- &nbsp;&nbsp;&nbsp;&nbsp;<button>Add To Cart</button> -->
 
           <div class="card-footer">
-              <button class="btn btn-primary" @click="addCard(menu)">Add To Cart</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-primary" @click="addCard(menu)">Add To Cart</button>
           </div>
          
 
