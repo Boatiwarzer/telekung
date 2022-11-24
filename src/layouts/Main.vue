@@ -28,7 +28,7 @@
 </div>
 
 
-<div id="background2" class="min-h-screen">
+<div id="background2">
 <div class="gap">
     <div class="image">
         <img class="w-full aspect-square" src="https://cdn.discordapp.com/attachments/1034523519125557309/1045043933580894370/Screenshot_2022-11-24_012152.png" alt="shabu" width="800" height="800">
