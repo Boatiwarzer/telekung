@@ -49,8 +49,8 @@
         <div> Follow us </div>
         <font-awesome-icon icon="fa-solid fa-phone" />
          02-32633910
-         <font-awesome-icon icon="fa-brands fa-facebook" />
-    </div>
+         <font-awesome-icon icon="fa-brands fa-square-facebook" />
+                </div>
 </div>
 
 
