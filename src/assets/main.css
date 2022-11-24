@@ -66,6 +66,7 @@ select{
   align-items:flex-start;
   box-sizing: border-box;
   margin: 15px -8px 10px 0px;
+  @apply bg-teal-400;
 }
 
 .adminitem {
@@ -77,7 +78,7 @@ select{
 
 .admincontent {
   color: #242424;
-  background-color: #1bbefe;
+  background-color: #6cecd0;
   font-weight: 600;
   box-sizing: border-box;
   height: 100%;
@@ -91,3 +92,15 @@ select{
   margin-left: auto;
   border-radius: 12px;
 }
+h1{
+  /* display:block; */
+         @apply bg-black border-4 border-amber-200;
+         font-size: 300%;
+         color: #FFFFAB;
+         text-align: center;
+         font-family: 'Mali', cursive;
+         margin-left: 35%;
+         margin-right: 35%;
+         padding: 1%;
+         animation: fadeIn 2s; 
+     }

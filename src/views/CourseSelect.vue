@@ -1,16 +1,14 @@
 <template>
     <link rel="stylesheet" href="../assets/main.css">
-    <link rel="stylesheet" href="../assets/style.css">
-
     <div id="background" class="min-h-screen">
     <div class="">
         <router-link to="/" class="button">Home</router-link>
         <router-link to="/menu" class="button" >Menu</router-link>
-        <router-link to="/select" class="butto" ><font-awesome-icon icon="fa-solid fa-pen" /> Table</router-link>
+        <router-link to="/select" class="butto" >Table</router-link>
         <router-link to="/order" class="button" >Order</router-link>
     </div>
 
-
+        
     </div>
     <div class="box">
         <form class="entable" @submit.prevent="signInButtonPressed">
@@ -18,12 +16,12 @@
             
             <!-- <div v-for="profile in profiles" :key="profile.id" class="profilecolor2">  -->
 
-            <select v-model="tableselect" name="tables" id="tables" autofocus required="required">
+            <select v-model="tableselect" name="tables" id="tables" @change="tableNo()" autofocus required="required">
                 <option value="">--select--</option>
-                <option v-for="table in tables" :key="table.id">{{table.no}}</option>
+                <option v-for="table in tables" :key="table.id" >{{table.no}}</option>
             </select><br>
             <label for="persons">Number of people : </label>
-            <input v-model="persons" type="number" name="numbers" size="25" min="1" max="8"  required><br>
+            <input v-model="persons" type="number" name="numbers" size="25" min="1" :max="maxperson"  required><br>
             <label for="name">Name : </label>
             <input v-model="name" type="text" class="names" name="name" placeholder="Plese enter your name"  required><br>
             <label for="course">Choosing a course : </label>
@@ -46,7 +44,6 @@
         </form>
 
     </div>
-</div>
     
 </template>
 
@@ -54,7 +51,7 @@
 
 import { useTableStore } from '../stores/sendForm';
 // import { projectFirestore } from '../firebase/index';
-import { collection, getDoc, getDocs, addDoc } from "firebase/firestore";
+import { collection, getDoc, getDocs, addDoc, query,where } from "firebase/firestore";
 import { db } from '@/firebase';
 export default {
     data() {
@@ -68,31 +65,20 @@ export default {
         date:'',
         time:'',
         telephone:'',
-        firebaseData: null,
-        state: 'loading'
+        maxperson: 7,
+        
       };
     },
-  async mounted(){
+    async mounted(){
     await useTableStore().fetchData();
     this.tables = useTableStore().getTables;
     console.log(this.tables);
-  },computed: {
-        sortedArray: function() {
-            function compare(a, b) {
-                if (a.name < b.name)
-                    return -1;
-                if (a.name > b.name)
-                    return 1;
-                return 0;
-            }
-
-            return this.tables.sort(compare);
-        }
+  
   
   },
     methods: {
         async signInButtonPressed() {
-            console.log(this.name, this.tableselect,this.date,this.course,this.person,this.telephone);
+            console.log(this.name, this.tableselect,this.date,this.course,this.persons,this.telephone,this.time);
             const docRef = await addDoc(collection(db, "form"), {
                 tableselect: this.tableselect,
                 persons: this.persons,
@@ -103,12 +89,24 @@ export default {
                 telephone: this.telephone,
                 status: "not_check"
         });
-    //         let formUser = {
-    //         tableselect: this.tableselect,
-    //         person: this.person,
-    //         }
-    //     projectFirestore.collection('formUser').add(formUser)
-    }
+        
+   
+        },
+        async tableNo(){
+            console.log(this.tableselect);
+            const q = query(collection(db, "table"), where("no", "==", this.tableselect));
+            
+            const querySnapshot = await getDocs(q);
+            querySnapshot.forEach((docs) => {
+                // updateDoc(doc(db, "form", docs.id), {status: "confirm" });
+                console.log(docs.data());
+                console.log(docs.id, " => ", docs.data());
+                this.maxperson = docs.data().tableselect
+            
+            });
+            console.log(this.maxperson);
+
+        }
                
 
     }
@@ -116,6 +114,3 @@ export default {
 
 </script>
 
-<style>
-
-</style>

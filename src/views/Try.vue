@@ -28,7 +28,5 @@
   };
   </script>
   <style>
-  *{
-    @apply text-green-900 text-3xl
-  }
+  
 </style>

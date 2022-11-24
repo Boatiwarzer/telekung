@@ -34,8 +34,8 @@
 
                 </div>
                 <div>
-                    <button @click="updateq(ch.name)">Check</button>
-                    <button @click="deleteq(ch.name)">Delete</button>
+                    <button class="butto" @click="updateq(ch.name)">Check</button>
+                    <button class="butto" @click="deleteq(ch.name)">Delete</button>
                 </div>
             </div>
         </div>  
