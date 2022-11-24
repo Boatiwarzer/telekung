@@ -1,13 +1,14 @@
 <template >
-    <link rel="stylesheet" href="../assets/main.css">
-<div id="background" class="min-h-screen">
+    <link rel="stylesheet" href="../assets/style.css">
+
+    <div id="background" class="min-h-screen">
    
     <div class="h" >
         <!-- <div class="name">
         <strong>Tele Shabu!</strong>
         </div> -->
 
-        <div>
+        <div class="fonts">
         <router-link to="/" class="butto">Home</router-link>
         <router-link to="/menu" class="button1" >Menu</router-link>
         <router-link to="/select" class="button1" >Table</router-link>
