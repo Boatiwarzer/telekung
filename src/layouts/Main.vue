@@ -20,22 +20,23 @@
     
 </div>
 
-<div>
-    .................................................................................................................................................................................................................................................................................................................................
-</div>
 
 <div id="background2" class="min-h-screen">
 <div class="gap">
+    <div class="image">
+        <img class="w-full aspect-square" src="https://cdn.discordapp.com/attachments/1034523519125557309/1045043933580894370/Screenshot_2022-11-24_012152.png" alt="shabu" width="800" height="800">
+    </div>
+    <div>
+        <h1 class="slo">Tele Shabu</h1>
+        <div class="slo">อิ่มอร่อยกับ เทเลชาบู หม้อไฟแห่งความสุข</div>
+    </div>
     <!-- <img class="w-full aspect-video ..." src="https://i.pinimg.com/564x/4c/62/53/4c6253a290d6d5bcb9c6c69685dde500.jpg" /> -->
-    <img class="w-full aspect-square" src="https://cdn.discordapp.com/attachments/1034523519125557309/1045043933580894370/Screenshot_2022-11-24_012152.png" alt="shabu" width="800" height="800">
-    <h1 class="slo">Tele Shabu</h1>
-    <div class="slo">อิ่มอร่อยกับ เทเลชาบู หม้อไฟแห่งความสุข</div>
+    
     <!-- ... -->
 </div>
 </div>
-<div>
-    .................................................................................................................................................................................................................................................................................................................................
-</div>
+
+
 <div id="background3" class="min-h-screen">
     <div class="icon">
         <div> Follow us </div>
@@ -77,12 +78,14 @@ export default{
 }
 
 div.gap {
-/* background-color: black ; */
-  margin: 10px;
+  margin: 20px;
   /* border: px solid rgb(141, 117, 117); */
   /* float: ; */
-  width: 1000px;
-  display: inline-flex;
+  /* width: 250%; */
+  display: flex;
+  align-items:center;
+  justify-content:flex-start;
+  background-size: cover;
 }
 
 
@@ -151,14 +154,18 @@ div.gap {
 
 
 .slo{
-    font-size: 100%;
-    text-align: center;
+    margin-left: 45px;
+    font-size: 170%;
     color: rgb(255, 255, 255);
     font-family: 'Mali', cursive;
     padding: 1%;
+    
    
 }
 .icon{
     color: #f7f7f9;
+}
+.image{
+    background-color: black ;
 }
 </style>
