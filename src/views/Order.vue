@@ -1,6 +1,7 @@
 <template>
     <link rel="stylesheet" href="../src/assets/style.css">
     <link rel="stylesheet" href="../src/assets/main.css">
+    
 
     <div id="background" class="min-h-screen">
     <div>
@@ -41,6 +42,10 @@
             
             &nbsp;&nbsp;&nbsp;&nbsp;<button>Add To Cart</button>
 
+            <div class="card-footer">
+              <input type="checkbox" class="form-control">
+            </div>
+
           </div>
             <!-- <div class="wrapper" v-if="menu.value === 1">
               <button class="btn btn--minus" @click="changeCounter('-1')" type="button" name="button">
@@ -60,24 +65,7 @@
       
     </div>
     
-    <!-- <botton @click="dropdown=!dropdown">menu</botton>
-    <div class="rounded-lg animate-fadeIn" v-if="dropdown">this is dropdown</div> -->
-  <!-- <div class="item">
-    <div class="content">
-      <p>22222</p>
-    </div>
-  </div>
-  <div class="item">
-    <div class="content">
-      <p>33333</p>
-    </div>
-  </div>
-  <div class="item">
-    <div class="content">
-      <p>44444</p>
-    </div>
-  </div>
-    </div> -->
+    
 </template>
 
 <script>

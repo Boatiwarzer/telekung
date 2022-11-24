@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mali:wght@200;400&display=swap');
 
 
+
 *{
   font-family: 'Mali', cursive;
   font-weight: 400;
@@ -38,6 +39,7 @@ select{
   padding: 2%;
   margin-left: auto;
   font-family: 'Mali', cursive;
+  cursor: pointer;
   
 }
 .butto {
@@ -52,6 +54,7 @@ select{
   margin: 4px 2px 20px 20px;
   cursor: pointer;
   border-radius: 12px;
+
 }.adminflexbox {
   display: flex;
   flex-direction: row;
