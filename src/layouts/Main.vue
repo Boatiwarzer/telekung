@@ -1,12 +1,14 @@
 <template >
-<div id="background" class="min-h-screen">
+    <link rel="stylesheet" href="../assets/style.css">
+
+    <div id="background" class="min-h-screen">
    
     <div class="h" >
         <!-- <div class="name">
         <strong>Tele Shabu!</strong>
         </div> -->
 
-        <div>
+        <div class="fonts">
         <router-link to="/" class="butto">Home</router-link>
         <router-link to="/menu" class="button1" >Menu</router-link>
         <router-link to="/select" class="button1" >Table</router-link>
@@ -54,7 +56,7 @@ export default{
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@200;400&display=swap');
 *{
     font-family: 'Mali', cursive;
 }
@@ -149,7 +151,7 @@ background-color: black ;
 
 
 .slo{
-    font-size: ;
+    font-size: 100%;
     text-align: center;
     color: rgb(255, 255, 255);
     font-family: 'Mali', cursive;
