@@ -24,8 +24,8 @@
     <video autoplay="autoplay" loop="1" width="1100px" height="100px" >
       <source src="../assets/shubu.mp4" type="video/mp4">
     </video>
-</div>
-</div>
+    </div>
+    </div>
 
 
 <div id="background2">
@@ -84,8 +84,7 @@ export default{
   padding: 2%;
 }
 #background5 {
-    margin-left: 10%;
-    margin-top: 2%;
+    margin-left: auto;
 
 }
 #background6 {
