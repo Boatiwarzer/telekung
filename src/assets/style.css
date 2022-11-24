@@ -7,6 +7,7 @@ button{
     font-weight: bold;
     margin: 20px;
     padding: 5px 10px;
+    font-family: 'Mali', cursive;
 }
 button:hover{
     box-shadow: 0 0 5px 5px #e1701a inset;
