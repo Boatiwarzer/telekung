@@ -9,7 +9,7 @@
         </div> -->
 
         <div class="fonts">
-        <router-link to="/" class="butto">Home</router-link>
+        <router-link to="/" class="butto" ><font-awesome-icon icon="fa-solid fa-house" />  &nbsp;Home</router-link>
         <router-link to="/menu" class="button1" >Menu</router-link>
         <router-link to="/select" class="button1" >Table</router-link>
         <router-link to="/order" class="button1" >Order</router-link>
@@ -85,6 +85,7 @@ export default{
 }
 #background5 {
     margin-left: 10%;
+    margin-top: 2%;
 
 }
 #background6 {

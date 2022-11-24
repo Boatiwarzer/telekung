@@ -1,10 +1,12 @@
 <template>
     <link rel="stylesheet" href="../assets/main.css">
+    <link rel="stylesheet" href="../assets/style.css">
+
     <div id="background" class="min-h-screen">
     <div class="">
         <router-link to="/" class="button">Home</router-link>
         <router-link to="/menu" class="button" >Menu</router-link>
-        <router-link to="/select" class="butto" >Table</router-link>
+        <router-link to="/select" class="butto" ><font-awesome-icon icon="fa-solid fa-pen" /> Table</router-link>
         <router-link to="/order" class="button" >Order</router-link>
     </div>
 
