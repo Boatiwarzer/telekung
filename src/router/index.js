@@ -67,6 +67,12 @@ const router = createRouter({
       meta:{
         layout: 'Try'
       }
+    },{
+      path: '/cart',
+      name: 'cart',
+      meta:{
+        layout: 'Cart'
+      }
     }
   ]
 })

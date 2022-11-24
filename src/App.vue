@@ -21,6 +21,8 @@ import Regular from './views/regular.vue'
 import Admin from '@/views/Admin.vue'
 import Premium from './views/premium.vue'
 import Try from '@/views/Try.vue'
+import Cart from '@/views/Cart.vue'
+
 
 
 
@@ -36,6 +38,7 @@ export default {
     Premium,
     Admin,
     Try,
+    Cart,
     
   },
   computed:{

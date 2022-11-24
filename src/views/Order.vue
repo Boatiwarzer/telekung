@@ -35,15 +35,17 @@
   <div>
     
     <div class="row">
+      
       <div class = "col-md-4" v-for="menu in selectmenu" :key="menu.value===1" style="display: inline-block;" >
           <div v-if="menu.value === 1" class="profilecolor">
           <img :src="menu.picture" class="profilecolor2">
           <h3>&nbsp;&nbsp;&nbsp;&nbsp;ชื่อเมนู : {{menu.name}}</h3>
-          <div class="flex items-center justify-center gap-x-4">
+          <!-- <div v-if="menu.name === 'ตับหมู'" class="flex items-center justify-center gap-x-4">
             <button class="butto" @click="increment">+</button>
             {{ count }}
             <button class="butto" @click="decrement">-</button>
-          </div>
+          </div> -->
+          
           
           <!-- &nbsp;&nbsp;&nbsp;&nbsp;<button>Add To Cart</button> -->
 
@@ -53,17 +55,10 @@
          
 
         </div>
-          <!-- <div class="wrapper" v-if="menu.value === 1">
-            <button class="btn btn--minus" @click="changeCounter('-1')" type="button" name="button">
-              -
-            </button>
-            <input class="quantity" type="text" name="name" :value="counter">
-            <button class="btn btn--plus" @click="changeCounter('1')" type="button" name="button">
-              +
-            </button> -->
-      <!-- </div>
-÷-->
+          
+
       </div>
+      
 
 </div>
     

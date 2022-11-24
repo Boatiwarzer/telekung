@@ -30,6 +30,9 @@
             <div v-if="menu.value === 1" class="profilecolor">
             <img :src="menu.picture" class="profilecolor2">
             <h3>ชื่อเมนู : {{menu.name}}</h3>
+            <div class="card-footer">
+              <button class="btn btn-primary" @click="addCard(menu)">Add To Cart</button>
+          </div>
             </div>
         </div>
         <div class="row">
@@ -37,6 +40,9 @@
             <div v-if="menu.value === 2" class="profilecolor">
             <img :src="menu.picture" class="profilecolor2">
             <h3>ชื่อเมนู : {{menu.name}}</h3>
+            <div class="card-footer">
+              <button class="btn btn-primary" @click="addCard(menu)">Add To Cart</button>
+          </div>
             </div>
         </div>
 
@@ -48,7 +54,11 @@
             <div v-if="menu.value === 3" class="profilecolor">
             <img :src="menu.picture" class="profilecolor2">
             <h3>ชื่อเมนู : {{menu.name}}</h3>
+            <div class="card-footer">
+              <button class="btn btn-primary" @click="addCard(menu)">Add To Cart</button>
+          </div>
             </div>
+            
         </div>
 
 	    </div>
@@ -75,6 +85,29 @@ export default {
     await useSelectMenuStore().fetchData();
     this.selectmenu = useSelectMenuStore().getselectmenu;
     this.normal()
+  },methods: {
+    increment () {
+      this.count++;
+    },
+    decrement () {
+      if(this.count > 0){
+        this.count-- ;
+      }
+    },
+    addCard:function(menu){
+      console.log(this.food);
+      // if(menu.id=1){
+      //   this.food+=1;
+      //   if(this.coffee<=1){
+      //     this.carts.push({
+      //     qty:1,
+      //   })
+      //   }else{
+
+      //   }
+        
+      // }
+    },
   },
 }
 
