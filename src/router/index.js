@@ -61,6 +61,12 @@ const router = createRouter({
       meta:{
         layout: 'Admin'
       }
+    },{
+      path: '/try',
+      name: 'try',
+      meta:{
+        layout: 'Try'
+      }
     }
   ]
 })

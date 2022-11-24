@@ -9,7 +9,7 @@
                     Table : {{ch.tableselect}}
                 </div>
                 <div>
-                    Number of people : {{ch.person}}
+                    Number of people : {{ch.persons}}
                 </div>
                 <div>
                     Name : {{ch.name}}

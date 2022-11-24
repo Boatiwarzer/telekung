@@ -20,6 +20,8 @@ import Order from '@/views/Order.vue'
 import Regular from './views/regular.vue'
 import Admin from '@/views/Admin.vue'
 import Premium from './views/premium.vue'
+import Try from '@/views/Try.vue'
+
 
 
 // import Default from '@/layouts/Default.vue'
@@ -33,6 +35,7 @@ export default {
     Regular,
     Premium,
     Admin,
+    Try,
     
   },
   computed:{
