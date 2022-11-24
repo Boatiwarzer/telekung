@@ -34,7 +34,8 @@
 
                 </div>
                 <div>
-                    <button @click="updateStatus">Confirm</button>
+                    <button @click="updateq(ch.name)">Check</button>
+                    <button @click="deleteq(ch.name)">Delete</button>
                 </div>
             </div>
         </div>  
@@ -47,7 +48,7 @@
 
 <script>
 import { useFormStore } from '../stores/createque';
-import { doc, updateDoc } from "firebase/firestore";
+import { doc, updateDoc, query, where, getDocs, collection , deleteDoc } from "firebase/firestore";
 import { db } from '@/firebase';
 
 
@@ -64,18 +65,29 @@ export default {
     console.log(this.form);
     
   },methods:{
-        async updateStatus(){
+        async deleteq(name){
+            console.log(name);
+            const q = query(collection(db, "form"), where("name", "==", name));
+            const querySnapshot = await getDocs(q);
+            querySnapshot.forEach((docs) => {
+                deleteDoc(doc(db, "form", docs.id));
+                console.log(docs.id, " => ", docs.data());
             
-    
-            const statusRef = doc(db, "form", "qW84hovcT908faTqTxsc");
-            await updateDoc(statusRef, {
-                status: "confirm"
-
+            });
+        },
+        async updateq(name){
+            console.log(name);
+            const q = query(collection(db, "form"), where("name", "==", name));
+            const querySnapshot = await getDocs(q);
+            querySnapshot.forEach((docs) => {
+                updateDoc(doc(db, "form", docs.id), {status: "confirm" });
+                console.log(docs.id, " => ", docs.data());
             
-    });
+            });
         }
-  },
+    }
 }
+
 
 
 </script>
