@@ -65,7 +65,7 @@ export default {
         date:'',
         time:'',
         telephone:'',
-        maxperson: 7,
+        maxperson: 8,
         
       };
     },
