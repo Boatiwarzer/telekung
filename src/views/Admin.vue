@@ -1,31 +1,33 @@
 
 <template >
     <link rel="stylesheet" href="../assets/main.css">
-    <link rel="stylesheet" href="../src/assets/style.css">
     <h1>Admin</h1>
     <div class="adminflexbox">
         <div class="adminitem" v-for="ch in form" :key="ch.id">
             <div class="admincontent">
                 <div>
-                    {{ch.tableselect}}
+                    Table : {{ch.tableselect}}
                 </div>
                 <div>
-                    {{ch.person}}
+                    Number of people : {{ch.person}}
                 </div>
                 <div>
-                    {{ch.name}}
+                    Name : {{ch.name}}
                 </div>
                 <div>
-                    {{ch.course}}
+                    Course : {{ch.course}}
                 </div>
                 <div>
-                    {{ch.date}}
+                    Date : {{ch.date}}
                 </div>
                 <div>
-                    {{ch.telephone}}
+                    Time : {{ch.time}}
                 </div>
                 <div>
-                    {{ch.status}}
+                    Tel : {{ch.telephone}}
+                </div>
+                <div>
+                    Status : {{ch.status}}
                 </div>
                 <div>
                     <!-- id: {{ch.id}} -->
