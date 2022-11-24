@@ -12,10 +12,6 @@
 
 
     </div>
-    <div>
-
-
-    
     <div class="box">
         <form class="entable" @submit.prevent="signInButtonPressed">
             <label for="tables">Select table:</label>
