@@ -20,7 +20,7 @@
     
 </div>
     <div class="video-container">
-    <video autoplay="autoplay">
+    <video autoplay="autoplay" loop="1">
       <source src="../assets/shubu.mp4" type="video/mp4">
     </video>
 </div>
