@@ -3,11 +3,7 @@ module.exports = {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
-<<<<<<< Updated upstream
     "./node_modules/flowbite/**/*.js",
-=======
-      "./node_modules/flowbite/**/*.js"
->>>>>>> Stashed changes
   ],
   theme: {
     extend: {},
