@@ -21,130 +21,101 @@
     </div>
   </div>
   </div>
-  <div class="flex flex-col">
-  <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
-    <div class="py-2 inline-block min-w-full sm:px-6 lg:px-8">
-      <div class="overflow-hidden">
-        <table class="min-w-full text-center">
-          <thead class="border-b">
+
+
+  <div class="overflow-x-auto relative shadow-md sm:rounded-lg">
+    <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+        <thead class="text-xs text-gray-700 uppercase dark:text-gray-400">
             <tr>
-              <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4">
-                Class
-              </th>
-              <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4">
-                Heading
-              </th>
-              <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4">
-                Heading
-              </th>
+                <th scope="col" class="py-3 px-6 bg-gray-50 dark:bg-gray-800">
+                    Product name
+                </th>
+                <th scope="col" class="py-3 px-6">
+                    Color
+                </th>
+                <th scope="col" class="py-3 px-6 bg-gray-50 dark:bg-gray-800">
+                    Category
+                </th>
+                <th scope="col" class="py-3 px-6">
+                    Price
+                </th>
             </tr>
-          </thead>
-          <tbody>
-            <tr class="border-b">
-              <td class="text-sm text-gray-900 font-medium px-6 py-4 whitespace-nowrap">
-                Default
-              </td>
-              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                Cell
-              </td>
-              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                Cell
-              </td>
+        </thead>
+        <tbody>
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+                <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Apple MacBook Pro 17"
+                </th>
+                <td class="py-4 px-6">
+                    Sliver
+                </td>
+                <td class="py-4 px-6 bg-gray-50 dark:bg-gray-800">
+                    Laptop
+                </td>
+                <td class="py-4 px-6">
+                    $2999
+                </td>
             </tr>
-            <tr class="border-b bg-blue-100 border-blue-200">
-              <td class="text-sm text-gray-900 font-medium px-6 py-4 whitespace-nowrap">
-                Primary
-              </td>
-              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                Cell
-              </td>
-              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                Cell
-              </td>
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+                <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Microsoft Surface Pro
+                </th>
+                <td class="py-4 px-6">
+                    White
+                </td>
+                <td class="py-4 px-6 bg-gray-50 dark:bg-gray-800">
+                    Laptop PC
+                </td>
+                <td class="py-4 px-6">
+                    $1999
+                </td>
             </tr>
-            <tr class="border-b bg-purple-100 border-purple-200">
-              <td class="text-sm text-gray-900 font-medium px-6 py-4 whitespace-nowrap">
-                Secondary
-              </td>
-              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                Cell
-              </td>
-              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                Cell
-              </td>
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+                <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Magic Mouse 2
+                </th>
+                <td class="py-4 px-6">
+                    Black
+                </td>
+                <td class="py-4 px-6 bg-gray-50 dark:bg-gray-800">
+                    Accessories
+                </td>
+                <td class="py-4 px-6">
+                    $99
+                </td>
             </tr>
-            <tr class="border-b bg-green-100 border-green-200">
-              <td class="text-sm text-gray-900 font-medium px-6 py-4 whitespace-nowrap">
-                Success
-              </td>
-              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                Cell
-              </td>
-              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                Cell
-              </td>
+            <tr class="border-b border-gray-200 dark:border-gray-700">
+                <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Google Pixel Phone
+                </th>
+                <td class="py-4 px-6">
+                    Gray
+                </td>
+                <td class="py-4 px-6 bg-gray-50 dark:bg-gray-800">
+                    Phone
+                </td>
+                <td class="py-4 px-6">
+                    $799
+                </td>
             </tr>
-            <tr class="border-b bg-red-100 border-red-200">
-              <td class="text-sm text-gray-900 font-medium px-6 py-4 whitespace-nowrap">
-                Danger
-              </td>
-              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                Cell
-              </td>
-              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                Cell
-              </td>
+            <tr>
+                <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                    Apple Watch 5
+                </th>
+                <td class="py-4 px-6">
+                    Red
+                </td>
+                <td class="py-4 px-6 bg-gray-50 dark:bg-gray-800">
+                    Wearables
+                </td>
+                <td class="py-4 px-6">
+                    $999
+                </td>
             </tr>
-            <tr class="border-b bg-yellow-100 border-yellow-200">
-              <td class="text-sm text-gray-900 font-medium px-6 py-4 whitespace-nowrap">
-                Warning
-              </td>
-              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                Cell
-              </td>
-              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                Cell
-              </td>
-            </tr>
-            <tr class="border-b bg-indigo-100 border-indigo-200">
-              <td class="text-sm text-gray-900 font-medium px-6 py-4 whitespace-nowrap">
-                Info
-              </td>
-              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                Cell
-              </td>
-              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                Cell
-              </td>
-            </tr>
-            <tr class="border-b bg-gray-50 border-gray-200">
-              <td class="text-sm text-gray-900 font-medium px-6 py-4 whitespace-nowrap">
-                Light
-              </td>
-              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                Cell
-              </td>
-              <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                Cell
-              </td>
-            </tr>
-            <tr class="border-b bg-gray-800 boder-gray-900">
-              <td class="text-sm text-white font-medium px-6 py-4 whitespace-nowrap">
-                Dark
-              </td>
-              <td class="text-sm text-white font-light px-6 py-4 whitespace-nowrap">
-                Cell
-              </td>
-              <td class="text-sm text-white font-light px-6 py-4 whitespace-nowrap">
-                Cell
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </div>
+        </tbody>
+    </table>
 </div>
+
 </template>
 
 <script>
@@ -154,5 +125,11 @@ export default {
 </script>
 
 <style>
-
+.card10{
+     width: 20%;
+     display: inline-block;
+     box-shadow: 2px 2px 20px black;
+     border-radius: 5px; 
+     margin: 2%;
+    }
 </style>

@@ -24,8 +24,8 @@
     <video autoplay="autoplay" loop="1" width="1100px" height="100px" >
       <source src="../assets/shubu.mp4" type="video/mp4">
     </video>
-</div>
-</div>
+    </div>
+    </div>
 
 
 <div id="background2">
@@ -49,8 +49,8 @@
         <div> Follow us </div>
         <font-awesome-icon icon="fa-solid fa-phone" />
          02-32633910
-         <font-awesome-icon icon="fa-brands fa-facebook" />
-    </div>
+         <font-awesome-icon icon="fa-brands fa-square-facebook" />
+                </div>
 </div>
 
 
@@ -84,8 +84,7 @@ export default{
   padding: 2%;
 }
 #background5 {
-    margin-left: 10%;
-    margin-top: 2%;
+    margin-left: auto;
 
 }
 #background6 {
