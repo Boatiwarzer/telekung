@@ -12,12 +12,13 @@
 
     </div>
     </div>
+    <div class="bg-food">
+        <div id="background2" class="min-h-screen">
     <div class="header">
         <h1>My Menu</h1>
     </div>
     
-
-    <div class="bg-food">
+    
 
     <div class="costom">
         <button @click="normal" class="button">normal</button>
@@ -29,6 +30,7 @@
         <img :src="this.image_src">
     </div>
     </div>
+</div>
 
 </template>
 
@@ -65,7 +67,7 @@ export default {
 
 <style>
 .bg-regular{
-    background-image: url("https://cdn.discordapp.com/attachments/1039195786585579550/1044173205092450315/regular-menu.jpg%22");
+    /* background-image: url("https://cdn.discordapp.com/attachments/1039195786585579550/1044173205092450315/regular-menu.jpg%22"); */
     background-position: center;
     background-size: cover;
     height: 100%;
