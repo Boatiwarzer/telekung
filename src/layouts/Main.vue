@@ -19,8 +19,10 @@
     </div>
     
 </div>
-<div>
-    <iframe width="100%" height="402" src="https://www.youtube.com/embed/23Px3V0H0FQ?autoplay=1" title="shabu" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="video-container">
+    <video autoplay="autoplay">
+      <source src="../assets/shubu.mp4" type="video/mp4">
+    </video>
 </div>
 
 
@@ -170,5 +172,13 @@ div.gap {
 }
 .image{
     background-color: black ;
+}
+video-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: hidden;
 }
 </style>
