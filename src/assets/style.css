@@ -75,7 +75,7 @@ button:hover{
 
 h1{
  /* display:block; */
-        @apply bg-blue-900 border-4 border-amber-200;
+        @apply bg-black border-4 border-amber-200;
         font-size: 300%;
         color: #FFFFAB;
         text-align: center;
