@@ -30,6 +30,9 @@ select{
   @apply border-2 border-cyan-200 mb-2
 
 }
+#background4{
+  background-image: url('https://www.forfur.com/img/I57/l_5671_14640017161305458323.jpg');
+}
 .button{
   padding: 3px 10px;
   font-size: 100%;

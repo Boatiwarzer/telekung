@@ -8,8 +8,12 @@
         <router-link to="/order" class="button" >Order</router-link>
     </div>
 
-        
+
     </div>
+    <div id="background4">
+
+
+    
     <div class="box">
         <form class="entable" @submit.prevent="signInButtonPressed">
         <label for="tables">Select table:</label>
@@ -44,6 +48,7 @@
         </form>
 
     </div>
+</div>
     
 </template>
 
