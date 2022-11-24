@@ -40,11 +40,12 @@
             <img :src="menu.picture" class="profilecolor2">
             <h3>&nbsp;&nbsp;&nbsp;&nbsp;ชื่อเมนู : {{menu.name}}</h3>
             
-            &nbsp;&nbsp;&nbsp;&nbsp;<button>Add To Cart</button>
+            <!-- &nbsp;&nbsp;&nbsp;&nbsp;<button>Add To Cart</button> -->
 
             <div class="card-footer">
-              <input type="checkbox" class="form-control">
+                <button class="btn btn-primary" @click="addCard(menu)">Add To Cart</button>
             </div>
+           
 
           </div>
             <!-- <div class="wrapper" v-if="menu.value === 1">
@@ -64,12 +65,18 @@
       
       
     </div>
+    <div>
+      <tbody>
+        <!-- <tr v-for="product in carts"></tr> -->
+      </tbody>
+    </div>
     
     
 </template>
 
 <script>
 
+// import { isTemplateNode } from '@vue/compiler-core';
 import { useSelectMenuStore } from '../stores/order.js';
 
 export default {
@@ -78,6 +85,9 @@ export default {
         selectmenu: [],
         image_src:'',
         counter: 1,
+        food:0,
+        f:0,
+        carts:[],
 
       };
     },
@@ -89,11 +99,25 @@ export default {
         changeCounter: function(num){
 				this.counter += +num
 				console.log(this.counter)
-				!isNaN(this.counter) && this.counter > 0 ? this.counter : this.counter = 0;
-            
-			}
+				!isNaN(this.counter) && this.counter > 0 ? this.counter : this.counter = 0;    
+			},
+      addCard:function(menu){
+        console.log(this.food);
+        // if(menu.id=1){
+        //   this.food+=1;
+        //   if(this.coffee<=1){
+        //     this.carts.push({
+        //     qty:1,
+        //   })
+        //   }else{
+
+        //   }
+          
+        // }
+      },
 		},
 		computed: {
+
       
 
 		}

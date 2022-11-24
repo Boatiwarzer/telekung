@@ -9,7 +9,7 @@
         </div> -->
 
         <div class="fonts">
-        <router-link to="/" class="butto">Home</router-link>
+        <router-link to="/" class="butto" ><font-awesome-icon icon="fa-solid fa-house" />  &nbsp;Home</router-link>
         <router-link to="/menu" class="button1" >Menu</router-link>
         <router-link to="/select" class="button1" >Table</router-link>
         <router-link to="/order" class="button1" >Order</router-link>
@@ -18,6 +18,13 @@
 
     </div>
     
+</div>
+    <div id="background6">
+    <div id="background5">
+    <video autoplay="autoplay" loop="1" width="1100px" height="100px" >
+      <source src="../assets/shubu.mp4" type="video/mp4">
+    </video>
+</div>
 </div>
 
 
@@ -75,6 +82,15 @@ export default{
   /* background-image: url(../assets/images/back.png);  */
   background-image: url("https://cdn.discordapp.com/attachments/1039195786585579550/1044466921854214184/bg-menu.jpg");
   padding: 2%;
+}
+#background5 {
+    margin-left: 10%;
+    margin-top: 2%;
+
+}
+#background6 {
+    background-color: black;
+
 }
 
 div.gap {
@@ -168,4 +184,5 @@ div.gap {
 .image{
     background-color: black ;
 }
+
 </style>
