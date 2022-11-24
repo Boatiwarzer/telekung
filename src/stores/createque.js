@@ -15,9 +15,16 @@ export const useFormStore = defineStore('form', {
         async fetchData() {
             const queryData = await getDocs(collection(db, 'form'));
             this.form = queryData.docs.map((doc) => doc.data());
-        // },async createUser(){
-        //     const queryData = await getDocs(collection(db, 'form'));
-        //     this.form = queryData.docs.add((doc) => doc.data());
+                
+            // this.form = queryData.valueChanges().map((docs) => {
+            //     return docs.map(doc => {const data = doc.data();
+            //     const id = doc.id;
+            //     return {id, ...data};})
+                
+            // });
+            
+
+        
             
         }
     },

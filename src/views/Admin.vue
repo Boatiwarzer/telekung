@@ -24,6 +24,16 @@
                 <div>
                     {{ch.telephone}}
                 </div>
+                <div>
+                    {{ch.status}}
+                </div>
+                <div>
+                    <!-- id: {{ch.id}} -->
+
+                </div>
+                <div>
+                    <button @click="updateStatus">Confirm</button>
+                </div>
             </div>
         </div>  
   </div>
@@ -35,6 +45,11 @@
 
 <script>
 import { useFormStore } from '../stores/createque';
+import { doc, updateDoc } from "firebase/firestore";
+import { db } from '@/firebase';
+
+
+
 export default {
     data() {
       return {
@@ -45,6 +60,18 @@ export default {
     await useFormStore().fetchData();
     this.form = useFormStore().getForm;
     console.log(this.form);
+    
+  },methods:{
+        async updateStatus(){
+            
+    
+            const statusRef = doc(db, "form", "qW84hovcT908faTqTxsc");
+            await updateDoc(statusRef, {
+                status: "confirm"
+
+            
+    });
+        }
   },
 }
 
