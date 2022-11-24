@@ -1,6 +1,6 @@
 <template>
     <link rel="stylesheet" href="../assets/main.css">
-    <div id="background" class="min-h-screen">
+    <div id="background">
     <div class="">
         <router-link to="/" class="button">Home</router-link>
         <router-link to="/menu" class="button" >Menu</router-link>

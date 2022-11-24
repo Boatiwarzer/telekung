@@ -3,7 +3,7 @@
     <link rel="stylesheet" href="../src/assets/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
-    <div id="background" class="min-h-screen">
+    <div id="background">
     <div>
         <router-link to="/" class="button">Home</router-link>
         <router-link to="/menu" class="button" >Menu</router-link>

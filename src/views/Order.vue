@@ -3,7 +3,7 @@
   <link rel="stylesheet" href="../src/assets/main.css">
   
 
-  <div id="background" class="min-h-screen">
+  <div id="background" >
   <div>
     
       <router-link to="/" class="button">Home</router-link>

@@ -1,7 +1,7 @@
 <template >
     <link rel="stylesheet" href="../assets/style.css">
 
-    <div id="background" class="min-h-screen">
+    <div id="background">
    
     <div class="h" >
         <!-- <div class="name">
@@ -31,7 +31,7 @@
 <div id="background2">
 <div class="gap">
     <div class="image">
-        <img class="w-full aspect-square" src="https://cdn.discordapp.com/attachments/1034523519125557309/1045043933580894370/Screenshot_2022-11-24_012152.png" alt="shabu" width="800" height="800">
+        <img src="https://cdn.discordapp.com/attachments/1034523519125557309/1045043933580894370/Screenshot_2022-11-24_012152.png" alt="shabu" width="800" height="800">
     </div>
     <div>
         <h1 class="slo">Tele Shabu</h1>
@@ -44,7 +44,7 @@
 </div>
 
 
-<div id="background3" class="min-h-screen">
+<div id="background3">
     <div class="icon">
         <div> Follow us </div>
         <font-awesome-icon icon="fa-solid fa-phone" />
