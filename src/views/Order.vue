@@ -125,17 +125,7 @@ async mounted(){
     
 
   }
-// methods:{
-//       normal(){
-//           this.normal === false && this.regular === true && this.premium === true;
-//       },
-//       regular(){
-//           this.normal === false && this.regular === false && this.premium === true;
-//       },
-//       premium(){
-//           this.normal === false && this.regular === false && this.premium === false;
-//       },
-// },
+
 }
 
 </script>

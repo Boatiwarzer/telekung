@@ -47,10 +47,12 @@
                     ตับหมู
                 </th>
                 <td class="py-4 px-6">
-                    ปุ่มเพิ่มลด
+                    <button class="butto" @click="increment">+</button>
+                    {{count}}
+                    <button class="butto" @click="decrement">-</button>
                 </td>
                 <td class="py-4 px-6 bg-gray-50 dark:bg-gray-800">
-                    ลิ้งเลข
+                    x{{count}}
                 </td>
                 <td class="py-4 px-6">
                     <font-awesome-icon icon="fa-solid fa-xmark" />
@@ -61,10 +63,12 @@
                     หมูสามชั้น
                 </th>
                 <td class="py-4 px-6">
-                    ปุ่มเพิ่มลด
+                    <button class="butto" @click="increment1">+</button>
+                    {{count1}}
+                    <button class="butto" @click="decrement1">-</button>
                 </td>
                 <td class="py-4 px-6 bg-gray-50 dark:bg-gray-800">
-                    ลิ้งเลข
+                    x{{count1}}
                 </td>
                 <td class="py-4 px-6">
                     <font-awesome-icon icon="fa-solid fa-xmark" />
@@ -75,16 +79,25 @@
                     สาหร่ายวากาเมะ
                 </th>
                 <td class="py-4 px-6">
-                    ปุ่มเพิ่มลด
+                    <button class="butto" @click="increment2">+</button>
+                    {{count2}}
+                    <button class="butto" @click="decrement2">-</button>
                 </td>
                 <td class="py-4 px-6 bg-gray-50 dark:bg-gray-800">
-                    ลิ้งเลข
+                    x{{count2}}
                 </td>
                 <td class="py-4 px-6">
                     <font-awesome-icon icon="fa-solid fa-xmark" />
                 </td>
             </tr>
         </tbody>
+        <tfoot>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th><button class="btn" type="submit" value="Submit" @click="asa()" >ยืนยัน</button></th>
+            
+        </tfoot>
     </table>
     
 </div>
@@ -93,7 +106,47 @@
 
 <script>
 export default {
+    data() {
+    return {
+      count: 0,
+      count1:0,
+      count2:0,
+      carts:[],
+      alert:("ยืนยันเรียบร้อยแล้ว"),
 
+    };
+  },
+async mounted(){
+  await useSelectMenuStore().fetchData();
+  this.selectmenu = useSelectMenuStore().getselectmenu;
+  this.normal()
+},methods: {
+    increment () {
+      this.count++;
+    },
+    decrement () {
+      if(this.count > 0){
+        this.count-- ;
+      }
+    },increment1 () {
+      this.count1++;
+    },
+    decrement1 () {
+      if(this.count1 > 0){
+        this.count1-- ;
+      }
+    },increment2 () {
+      this.count2++;
+    },
+    decrement2 () {
+      if(this.count2 > 0){
+        this.count2-- ;
+      }
+    },asa () {
+        alert("ยืนยันเรียบร้อยแล้ว");
+    },
+    
+    }
 }
 </script>
 
