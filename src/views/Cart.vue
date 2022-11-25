@@ -28,92 +28,65 @@
         <thead class="text-xs text-gray-700 uppercase dark:text-gray-400">
             <tr>
                 <th scope="col" class="py-3 px-6 bg-gray-50 dark:bg-gray-800">
-                    Product name
+                    ชื่อเมนู
                 </th>
                 <th scope="col" class="py-3 px-6">
-                    Color
+                    เพิ่มลดจำนวนถาด
                 </th>
                 <th scope="col" class="py-3 px-6 bg-gray-50 dark:bg-gray-800">
-                    Category
+                    จำนวนถาด
                 </th>
                 <th scope="col" class="py-3 px-6">
-                    Price
+                    ยกเลิก
                 </th>
             </tr>
         </thead>
         <tbody>
             <tr class="border-b border-gray-200 dark:border-gray-700">
                 <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
-                    Apple MacBook Pro 17"
+                    ตับหมู
                 </th>
                 <td class="py-4 px-6">
-                    Sliver
+                    ปุ่มเพิ่มลด
                 </td>
                 <td class="py-4 px-6 bg-gray-50 dark:bg-gray-800">
-                    Laptop
+                    ลิ้งเลข
                 </td>
                 <td class="py-4 px-6">
-                    $2999
+                    <font-awesome-icon icon="fa-solid fa-xmark" />
                 </td>
             </tr>
             <tr class="border-b border-gray-200 dark:border-gray-700">
                 <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
-                    Microsoft Surface Pro
+                    หมูสามชั้น
                 </th>
                 <td class="py-4 px-6">
-                    White
+                    ปุ่มเพิ่มลด
                 </td>
                 <td class="py-4 px-6 bg-gray-50 dark:bg-gray-800">
-                    Laptop PC
+                    ลิ้งเลข
                 </td>
                 <td class="py-4 px-6">
-                    $1999
+                    <font-awesome-icon icon="fa-solid fa-xmark" />
                 </td>
             </tr>
             <tr class="border-b border-gray-200 dark:border-gray-700">
                 <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
-                    Magic Mouse 2
+                    สาหร่ายวากาเมะ
                 </th>
                 <td class="py-4 px-6">
-                    Black
+                    ปุ่มเพิ่มลด
                 </td>
                 <td class="py-4 px-6 bg-gray-50 dark:bg-gray-800">
-                    Accessories
+                    ลิ้งเลข
                 </td>
                 <td class="py-4 px-6">
-                    $99
-                </td>
-            </tr>
-            <tr class="border-b border-gray-200 dark:border-gray-700">
-                <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
-                    Google Pixel Phone
-                </th>
-                <td class="py-4 px-6">
-                    Gray
-                </td>
-                <td class="py-4 px-6 bg-gray-50 dark:bg-gray-800">
-                    Phone
-                </td>
-                <td class="py-4 px-6">
-                    $799
-                </td>
-            </tr>
-            <tr>
-                <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
-                    Apple Watch 5
-                </th>
-                <td class="py-4 px-6">
-                    Red
-                </td>
-                <td class="py-4 px-6 bg-gray-50 dark:bg-gray-800">
-                    Wearables
-                </td>
-                <td class="py-4 px-6">
-                    $999
+                    <font-awesome-icon icon="fa-solid fa-xmark" />
                 </td>
             </tr>
         </tbody>
     </table>
+    
 </div>
 
 </template>
@@ -132,4 +105,5 @@ export default {
      border-radius: 5px; 
      margin: 2%;
     }
+
 </style>

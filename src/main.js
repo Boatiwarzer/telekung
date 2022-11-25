@@ -8,7 +8,7 @@ import router from './router'
 
 import './assets/main.css'
 import 'flowbite';
-import '@themesberg/flowbite';
+//import '@themesberg/flowbite';
 
 
 
@@ -29,3 +29,4 @@ app.use(router)
 
 app.mount('#app')
 
+    
