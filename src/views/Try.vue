@@ -16,7 +16,7 @@
       <label class="ss"  for="name">User : </label>
       <input type="text" class="ss" name="name" placeholder="Plese enter your user"  required>
       <label class="ss"  for="Pasword">Password : </label>
-      <input type="password" class="ss" name="password" placeholder="Plese enter your password"  required>
+      <input type="password" name="password" placeholder="Plese enter your password"  required>
       <button class="ss" type="submit" value="Submit">
         <a href="http://localhost:5173/admin">Login</a>
       </button>
