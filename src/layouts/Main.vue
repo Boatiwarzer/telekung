@@ -89,7 +89,6 @@ export default{
 }
 #background6 {
     background-color: black;
-
 }
 
 div.gap {
