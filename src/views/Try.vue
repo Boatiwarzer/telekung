@@ -1,7 +1,7 @@
 <template >
   <link rel="stylesheet" href="../assets/style.css">
 
-  <div id="background" class="min-h-screen">
+  <div id="background">
  
   <div class="h" >
       <!-- <div class="name">
@@ -13,11 +13,11 @@
       <router-link to="/menu" class="button1" >Menu</router-link>
       <router-link to="/select" class="button1" >Table</router-link>
       <router-link to="/order" class="button1" >Order</router-link>
-      <label for="name">User : </label>
-      <input type="text" class="names" name="name" placeholder="Plese enter your user"  required>
-      <label for="Pasword">Password : </label>
-      <input type="password" class="password" name="password" placeholder="Plese enter your password"  required>
-      <button class="btn" type="submit" value="Submit">
+      <label class="ss"  for="name">User : </label>
+      <input type="text" class="ss" name="name" placeholder="Plese enter your user"  required>
+      <label class="ss"  for="Pasword">Password : </label>
+      <input type="password" class="ss" name="password" placeholder="Plese enter your password"  required>
+      <button class="ss" type="submit" value="Submit">
         <a href="http://localhost:5173/admin">Login</a>
       </button>
     
@@ -35,10 +35,10 @@
 </div>
 
 
-<div id="background2" class="min-h-screen">
+<div id="background2">
 <div class="gap">
   <div class="image">
-      <img class="w-full aspect-square" src="https://cdn.discordapp.com/attachments/1034523519125557309/1045043933580894370/Screenshot_2022-11-24_012152.png" alt="shabu" width="800" height="800">
+      <img src="https://cdn.discordapp.com/attachments/1034523519125557309/1045043933580894370/Screenshot_2022-11-24_012152.png" alt="shabu" width="800" height="800">
   </div>
   <div>
       <h1 class="slo">Tele Shabu</h1>
@@ -51,7 +51,7 @@
 </div>
 
 
-<div id="background3" class="min-h-screen">
+<div id="background3">
   <div class="icon">
       <div> Follow us </div>
       <font-awesome-icon icon="fa-solid fa-phone" />
@@ -190,6 +190,9 @@ border-radius: 12px;
 }
 .image{
   background-color: black ;
+}
+.ss{
+  @apply text-white ml-12;
 }
 
 </style>
